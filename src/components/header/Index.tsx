@@ -17,7 +17,7 @@ const HeaderContainer = styled.nav`
 
         &__link-container {
             display: flex;
-            gap: 30px;
+            gap: 40px;
             align-items: center;
         }
 

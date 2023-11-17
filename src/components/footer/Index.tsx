@@ -11,7 +11,7 @@ import { colors } from "@/styles/variables";
 
 const FooterContainer = styled.footer`
     background-color: ${colors.neutral1000};
-    padding: 80px 0;
+    padding: 80px 20px 10px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     row-gap: 30px;
@@ -50,6 +50,7 @@ const FooterContainer = styled.footer`
         &__copyright {
             grid-column: 1 / 3;
             color: ${colors.neutral100};
+            text-align: center;
         }
     }
 `;
@@ -63,7 +64,7 @@ const Footer = () => {
                 src=""
                 alt=""
                 height={100}
-                width={100}
+                width={300}
                 className="footer__logo"
             />
             <div className="footer__link-container">
