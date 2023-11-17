@@ -11,7 +11,7 @@ export const colors = {
     accent400: "#8fbfec",
     accent500: "#a6d3fd",
 
-    neutral000: "#222222",
+    neutral1000: "#222222",
     neutral900: "#545454",
     neutral800: "#727272",
     neutral700: "#868686",
