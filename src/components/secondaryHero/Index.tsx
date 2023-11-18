@@ -1,9 +1,11 @@
 import React from "react";
 import styled from "styled-components";
 
+import { SecondaryHeroProps } from "@/types";
+
 const SecondaryHeroContainer = styled.section``;
 
-const SecondaryHero = () => {
+const SecondaryHero = ({ image, title, description }: SecondaryHeroProps) => {
     return <SecondaryHeroContainer></SecondaryHeroContainer>;
 };
 

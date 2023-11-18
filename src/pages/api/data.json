@@ -1,0 +1,158 @@
+{
+    "home": {
+        "primaryHero": {
+            "eyebrow": "Dui nunc mattis enim ut tellus",
+            "heading": "sed vulputate odio ut enim blandit ",
+            "button": {}
+        },
+        "infoCards": {
+            "heading": "title",
+            "description": "Nulla at volutpat diam ut venenatis tellus. Viverra justo nec ultrices dui sapien. Cursus turpis massa tincidunt dui ut ornare lectus sit. Justo eget magna fermentum iaculis eu. Neque convallis a cras semper auctor neque vitae.",
+            "cardInfo": [
+                {
+                    "image": {
+                        "imageUrl": "",
+                        "imageAlt": ""
+                    },
+                    "title": "This is a title",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                },
+                {
+                    "image": {
+                        "imageUrl": "",
+                        "imageAlt": ""
+                    },
+                    "title": "This is a title",
+                    "description": " Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                },
+                {
+                    "image": {
+                        "imageUrl": "",
+                        "imageAlt": ""
+                    },
+                    "title": "This is a title",
+                    "description": " Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. "
+                }
+            ]
+        },
+        "centerContent": {
+            "eyebrow": "",
+            "heading": "",
+            "image": {
+                "imageUrl": "",
+                "imageAlt": ""
+            }
+        }
+    },
+    "about": {
+        "secondaryHero": {
+            "image": {
+                "imageUrl": "",
+                "imageAlt": ""
+            },
+            "title": "This is a title",
+            "description": " Duis aute irure dolor in reprehenderit"
+        },
+        "sideBySideContent": {
+            "image": {
+                "imageUrl": "",
+                "imageAlt": ""
+            },
+            "title": "This is a title",
+            "description": " Duis aute irure dolor in reprehenderit",
+            "imageOnRight": true
+        },
+        "sideBySideContent2": {
+            "image": {
+                "imageUrl": "",
+                "imageAlt": ""
+            },
+            "title": "This is a title",
+            "description": " Duis aute irure dolor in reprehenderit",
+            "imageOnRight": false
+        },
+        "contactInfo": {
+            "icon": {
+                "imageUrl": "",
+                "imageAlt": ""
+            },
+            "address": "123 SunnySide Lane, Freemont, KY, 93102",
+            "phone": "123-123-1234",
+            "email": "contact@biosynth.com"
+        }
+    },
+    "projects": [
+        {
+            "previewImage": {
+                "imageUrl": "",
+                "imageAlt": ""
+            },
+            "image": {
+                "imageUrl": "",
+                "imageAlt": ""
+            },
+            "type": "App/video/publication",
+            "description": "orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pulvinar sapien et ligula ullamcorper malesuada. Pellentesque adipiscing commodo elit at imperdiet dui. Semper feugiat nibh sed pulvinar proin gravida. Donec pretium vulputate sapien nec sagittis aliquam malesuada. Ullamcorper sit amet risus nullam eget felis eget nunc. Mattis pellentesque id nibh tortor. Mattis enim ut tellus elementum sagittis vitae. Scelerisque viverra mauris in aliquam sem fringilla ut. Non nisi est sit amet facilisis magna etiam. Molestie ac feugiat sed lectus vestibulum mattis."
+        },
+        {
+            "previewImage": {
+                "imageUrl": "",
+                "imageAlt": ""
+            },
+            "image": {
+                "imageUrl": "",
+                "imageAlt": ""
+            },
+            "type": "App/video/publication",
+            "description": "orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pulvinar sapien et ligula ullamcorper malesuada. Pellentesque adipiscing commodo elit at imperdiet dui. Semper feugiat nibh sed pulvinar proin gravida. Donec pretium vulputate sapien nec sagittis aliquam malesuada. Ullamcorper sit amet risus nullam eget felis eget nunc. Mattis pellentesque id nibh tortor. Mattis enim ut tellus elementum sagittis vitae. Scelerisque viverra mauris in aliquam sem fringilla ut. Non nisi est sit amet facilisis magna etiam. Molestie ac feugiat sed lectus vestibulum mattis."
+        },
+        {
+            "previewImage": {
+                "imageUrl": "",
+                "imageAlt": ""
+            },
+            "image": {
+                "imageUrl": "",
+                "imageAlt": ""
+            },
+            "type": "App/video/publication",
+            "description": "orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pulvinar sapien et ligula ullamcorper malesuada. Pellentesque adipiscing commodo elit at imperdiet dui. Semper feugiat nibh sed pulvinar proin gravida. Donec pretium vulputate sapien nec sagittis aliquam malesuada. Ullamcorper sit amet risus nullam eget felis eget nunc. Mattis pellentesque id nibh tortor. Mattis enim ut tellus elementum sagittis vitae. Scelerisque viverra mauris in aliquam sem fringilla ut. Non nisi est sit amet facilisis magna etiam. Molestie ac feugiat sed lectus vestibulum mattis."
+        },
+        {
+            "previewImage": {
+                "imageUrl": "",
+                "imageAlt": ""
+            },
+            "image": {
+                "imageUrl": "",
+                "imageAlt": ""
+            },
+            "type": "App/video/publication",
+            "description": "orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pulvinar sapien et ligula ullamcorper malesuada. Pellentesque adipiscing commodo elit at imperdiet dui. Semper feugiat nibh sed pulvinar proin gravida. Donec pretium vulputate sapien nec sagittis aliquam malesuada. Ullamcorper sit amet risus nullam eget felis eget nunc. Mattis pellentesque id nibh tortor. Mattis enim ut tellus elementum sagittis vitae. Scelerisque viverra mauris in aliquam sem fringilla ut. Non nisi est sit amet facilisis magna etiam. Molestie ac feugiat sed lectus vestibulum mattis."
+        },
+        {
+            "previewImage": {
+                "imageUrl": "",
+                "imageAlt": ""
+            },
+            "image": {
+                "imageUrl": "",
+                "imageAlt": ""
+            },
+            "type": "App/video/publication",
+            "description": "orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pulvinar sapien et ligula ullamcorper malesuada. Pellentesque adipiscing commodo elit at imperdiet dui. Semper feugiat nibh sed pulvinar proin gravida. Donec pretium vulputate sapien nec sagittis aliquam malesuada. Ullamcorper sit amet risus nullam eget felis eget nunc. Mattis pellentesque id nibh tortor. Mattis enim ut tellus elementum sagittis vitae. Scelerisque viverra mauris in aliquam sem fringilla ut. Non nisi est sit amet facilisis magna etiam. Molestie ac feugiat sed lectus vestibulum mattis."
+        },
+        {
+            "previewImage": {
+                "imageUrl": "",
+                "imageAlt": ""
+            },
+            "image": {
+                "imageUrl": "",
+                "imageAlt": ""
+            },
+            "type": "App/video/publication",
+            "description": "orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pulvinar sapien et ligula ullamcorper malesuada. Pellentesque adipiscing commodo elit at imperdiet dui. Semper feugiat nibh sed pulvinar proin gravida. Donec pretium vulputate sapien nec sagittis aliquam malesuada. Ullamcorper sit amet risus nullam eget felis eget nunc. Mattis pellentesque id nibh tortor. Mattis enim ut tellus elementum sagittis vitae. Scelerisque viverra mauris in aliquam sem fringilla ut. Non nisi est sit amet facilisis magna etiam. Molestie ac feugiat sed lectus vestibulum mattis."
+        }
+    ]
+}

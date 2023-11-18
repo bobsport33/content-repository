@@ -11,7 +11,7 @@ import { colors } from "@/styles/variables";
 
 const FooterContainer = styled.footer`
     background-color: ${colors.neutral1000};
-    padding: 80px 20px 10px;
+    padding: 80px 60px 10px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     row-gap: 30px;

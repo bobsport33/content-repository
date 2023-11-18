@@ -9,10 +9,14 @@ const HeaderContainer = styled.nav`
     padding: 30px 50px;
 
     .header {
-        &__logo-container {
+        &__title-container {
         }
 
-        &__logo {
+        &__title {
+            ${P_LargeStyles};
+            font-weight: 700;
+            font-size: 1.875rem;
+            line-height: 2.25rem;
         }
 
         &__link-container {
@@ -32,7 +36,10 @@ const Header = () => {
     return (
         <HeaderContainer>
             <Link className="header__logo-container" href={"/"}>
-                <img src="" alt="" className="header__logo" />
+                <p className="header__title">
+                    BioSynth <br />
+                    Pharmaceuticals
+                </p>
             </Link>
             <div className="header__link-container">
                 <Link className="header__link" href={"/projects"}>
