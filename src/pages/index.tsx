@@ -32,21 +32,9 @@ export default function Home(props: Props) {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <main>
-                <PrimaryHero
-                    eyebrow={primaryHero.eyebrow}
-                    heading={primaryHero.heading}
-                    button={primaryHero.button}
-                />
-                <InfoCards
-                    heading={infoCards.heading}
-                    description={infoCards.description}
-                    cardInfo={infoCards.cardInfo}
-                />
-                <CenterContent
-                    eyebrow={centerContent.eyebrow}
-                    heading={centerContent.heading}
-                    image={centerContent.image}
-                />
+                <PrimaryHero {...primaryHero} />
+                <InfoCards {...infoCards} />
+                <CenterContent {...centerContent} />
             </main>
         </>
     );

@@ -118,6 +118,17 @@ export const P_SmallStyles = css`
     line-height: 1.125rem;
 `;
 
+export const EyebrowStyles = css`
+    font-family: ${fonts.montserrat};
+    font-weight: 400;
+    font-size: 2rem;
+    letter-spacing: 0.5rem;
+
+    @media ${media.tablet} {
+        font-size: 1.8rem;
+    }
+`;
+
 export const LinkStyles = css`
     display: flex;
     flex-direction: row;

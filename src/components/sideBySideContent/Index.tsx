@@ -11,6 +11,7 @@ const SideBySideContent = ({
     description,
     imageOnRight,
 }: SideBySideProps) => {
+    console.log(title, description);
     return <SideBySideContainer></SideBySideContainer>;
 };
 

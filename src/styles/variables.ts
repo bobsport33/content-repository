@@ -23,6 +23,10 @@ export const colors = {
     neutral100: "#f7f7f7",
 };
 
+export const gradients = {
+    blueGradient: `linear-gradient(153.79deg, ${colors.accent300} 16.8%, ${colors.primary400} 84.27%)`,
+};
+
 export const fonts = {
     montserrat: "Montserrat, sans-serif",
     hind: "Hind, sans-serif",

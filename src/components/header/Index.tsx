@@ -7,6 +7,7 @@ const HeaderContainer = styled.nav`
     display: flex;
     justify-content: space-between;
     padding: 30px 50px;
+    background-color: transparent;
 
     .header {
         &__title-container {

@@ -8,6 +8,7 @@ import {
     H5_styles,
     H6_styles,
 } from "./type";
+import { colors } from "./variables";
 
 const GlobalStyles = createGlobalStyle`
      * {
@@ -23,7 +24,7 @@ const GlobalStyles = createGlobalStyle`
     }
 
     body {
-
+      background-color: ${colors.neutral100};
     }
 
     a {

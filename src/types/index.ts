@@ -17,11 +17,13 @@ export interface CardProps {
     };
     title: string;
     description: string;
+    motionProps: any;
 }
 
 export interface CenterContentProps {
     eyebrow: string;
     heading: string;
+    description: string;
     image: {
         imageUrl: string;
         imageAlt: string;
@@ -33,6 +35,7 @@ export interface SecondaryHeroProps {
         imageUrl: string;
         imageAlt: string;
     };
+    eyebrow: string;
     title: string;
     description: string;
 }
