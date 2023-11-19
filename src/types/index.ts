@@ -66,6 +66,7 @@ export interface ProjectCollection {
 }
 
 export interface Project {
+    id: string;
     previewImage: {
         imageUrl: string;
         imageAlt: string;
@@ -74,6 +75,7 @@ export interface Project {
         imageUrl: string;
         imageAlt: string;
     };
+    title: string;
     description: string;
     projectOverview: string;
     apps: {
