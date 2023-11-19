@@ -48,7 +48,7 @@
     "about": {
         "secondaryHero": {
             "image": {
-                "imageUrl": "",
+                "imageUrl": "/images/molicules.jpg",
                 "imageAlt": ""
             },
             "eyebrow": "Accumsan in nisl",
@@ -78,7 +78,7 @@
                 "imageUrl": "",
                 "imageAlt": ""
             },
-            "address": "123 SunnySide Lane, Freemont, KY, 93102",
+            "address": "333 W 35th St, Chicago, IL 60616",
             "phone": "123-123-1234",
             "email": "contact@biosynth.com"
         }
@@ -93,8 +93,32 @@
                 "imageUrl": "",
                 "imageAlt": ""
             },
-            "type": "App/video/publication",
-            "description": "orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pulvinar sapien et ligula ullamcorper malesuada. Pellentesque adipiscing commodo elit at imperdiet dui. Semper feugiat nibh sed pulvinar proin gravida. Donec pretium vulputate sapien nec sagittis aliquam malesuada. Ullamcorper sit amet risus nullam eget felis eget nunc. Mattis pellentesque id nibh tortor. Mattis enim ut tellus elementum sagittis vitae. Scelerisque viverra mauris in aliquam sem fringilla ut. Non nisi est sit amet facilisis magna etiam. Molestie ac feugiat sed lectus vestibulum mattis."
+            "description": "orem ipsum dolor sit",
+            "projectOverview": "amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pulvinar sapien et ligula ullamcorper malesuada. Pellentesque adipiscing commodo elit at imperdiet dui. Semper feugiat nibh sed pulvinar proin gravida. Donec pretium vulputate sapien nec sagittis aliquam malesuada. Ullamcorper sit amet risus nullam eget felis eget nunc. Mattis pellentesque id nibh tortor. Mattis enim ut tellus elementum sagittis vitae. Scelerisque viverra mauris in aliquam sem fringilla ut. Non nisi est sit amet facilisis magna etiam. Molestie ac feugiat sed lectus vestibulum mattis.",
+            "apps": [
+                {
+                    "image": {
+                        "imageUrl": "",
+                        "imageAlt": ""
+                    }
+                }
+            ],
+            "videos": [
+                {
+                    "image": {
+                        "imageUrl": "",
+                        "imageAlt": ""
+                    }
+                }
+            ],
+            "publications": [
+                {
+                    "image": {
+                        "imageUrl": "",
+                        "imageAlt": ""
+                    }
+                }
+            ]
         },
         {
             "previewImage": {

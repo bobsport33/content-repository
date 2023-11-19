@@ -6,6 +6,7 @@ import { SideBySideProps } from "@/types";
 import Image from "next/image";
 import { Container } from "@/styles/mixins";
 import { P_MediumStyles } from "@/styles/type";
+import { colors } from "@/styles/variables";
 
 interface SideBySideContainerProps {
     $imageOnRight?: boolean;
@@ -35,7 +36,21 @@ const SideBySideContainer = styled.section<SideBySideContainerProps>`
         &__heading {
         }
         &__description {
-            ${P_MediumStyles}
+            ${P_MediumStyles};
+        }
+
+        &__image-container {
+            position: relative;
+        }
+
+        &__image-background {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top: -20px;
+            left: -20px;
+            z-index: -1;
+            background-color: ${colors.accent300};
         }
     }
 `;
@@ -70,12 +85,16 @@ const SideBySideContent = ({
                 className="content__image-container"
                 {...slideInOpposite}
             >
+                <motion.div
+                    {...slideIn}
+                    className="content__image-background"
+                ></motion.div>
                 <Image
                     className="content__image"
                     src={image.imageUrl}
                     alt={image.imageAlt}
                     height={600}
-                    width={600}
+                    width={800}
                 />
             </motion.div>
         </SideBySideContainer>

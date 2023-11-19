@@ -25,6 +25,7 @@ export const colors = {
 
 export const gradients = {
     blueGradient: `linear-gradient(153.79deg, ${colors.accent300} 16.8%, ${colors.primary400} 84.27%)`,
+    grayGradient: `linear-gradient(96.42deg, #e8e8e8 0.48%, #868686 96.04%);`,
 };
 
 export const fonts = {
