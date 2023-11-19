@@ -1,11 +1,25 @@
+import ProjectCarousel from "@/components/projectCarousel/Index";
 import data from "@/pages/api/data.json";
 
-import SecondaryHero from "@/components/secondaryHero/Index";
+import { ProjectCollection } from "@/types";
+interface Props {
+    data: ProjectCollection[];
+}
 
-export default function Projects() {
+export default function Projects(props: Props) {
+    const projects = props.data;
     return (
         <>
-            <SecondaryHero />
+            {projects &&
+                projects.map((project, i) => {
+                    return (
+                        <ProjectCarousel
+                            key={i}
+                            projectCategory={project.projectCategory}
+                            projects={project.projects}
+                        />
+                    );
+                })}
         </>
     );
 }

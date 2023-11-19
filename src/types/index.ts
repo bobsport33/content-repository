@@ -59,3 +59,42 @@ export interface ContactProps {
     phone: string;
     email: string;
 }
+
+export interface ProjectCollection {
+    projectCategory: string;
+    projects: Project[];
+}
+
+export interface Project {
+    previewImage: {
+        imageUrl: string;
+        imageAlt: string;
+    };
+    image: {
+        imageUrl: string;
+        imageAlt: string;
+    };
+    description: string;
+    projectOverview: string;
+    apps: {
+        title: string;
+        image: {
+            imageUrl: string;
+            imageAlt: string;
+        };
+    }[];
+    videos: {
+        title: string;
+        image: {
+            imageUrl: string;
+            imageAlt: string;
+        };
+    }[];
+    publications: {
+        title: string;
+        image: {
+            imageUrl: string;
+            imageAlt: string;
+        };
+    }[];
+}
