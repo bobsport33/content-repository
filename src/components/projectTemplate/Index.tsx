@@ -5,18 +5,57 @@ import { useRouter } from "next/router";
 
 import { Project } from "@/types";
 import Carousel from "./Carousel";
+import { Container } from "@/styles/mixins";
+import { LinkStyles, P_MediumStyles } from "@/styles/type";
 
 interface ProjectProps extends Project {
     category: string;
 }
 
-const ProjectTemplateCont = styled.section``;
+const ProjectTemplateCont = styled.section`
+    ${Container};
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+
+    .project {
+        &__content {
+            width: 100%;
+        }
+
+        &__title {
+        }
+
+        &__image {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        &__heading {
+        }
+
+        &__overview {
+            ${P_MediumStyles};
+        }
+
+        &__filter-container {
+            display: flex;
+            gap: 15px;
+        }
+
+        &__filter-btn {
+            background-color: transparent;
+            border: none;
+            ${LinkStyles};
+        }
+    }
+`;
 
 const ProjectTemplate = ({
     id,
     image,
     title,
-    description,
     projectOverview,
     apps,
     videos,
@@ -71,6 +110,7 @@ const ProjectTemplate = ({
     return (
         <ProjectTemplateCont>
             <div className="project__content">
+                <h1 className="project__title">{title}</h1>
                 <Image
                     className="project__image"
                     src={image.imageUrl}
@@ -81,16 +121,36 @@ const ProjectTemplate = ({
                 <h4 className="project__heading">Project Overview</h4>
                 <p className="project__overview">{projectOverview}</p>
                 <div className="project__filter-container">
-                    <button onClick={filterHandler} id="apps">
+                    <button
+                        className="project__filter-btn"
+                        onClick={filterHandler}
+                        id="apps"
+                    >
                         {apps.length} apps
                     </button>
-                    <button onClick={filterHandler} id="videos">
+                    <button
+                        className="project__filter-btn"
+                        onClick={filterHandler}
+                        id="videos"
+                    >
                         {videos.length} videos
                     </button>
-                    <button onClick={filterHandler} id="publications">
+                    <button
+                        className="project__filter-btn"
+                        onClick={filterHandler}
+                        id="publications"
+                    >
                         {publications.length} publications
                     </button>
-                    {/* clear filter button??? */}
+                    {filterCategory !== "" && (
+                        <button
+                            className="project__filter-btn"
+                            onClick={filterHandler}
+                            id=""
+                        >
+                            {publications.length} All
+                        </button>
+                    )}
                 </div>
             </div>
             <Carousel content={carouselContent} />
