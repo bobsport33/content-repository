@@ -6,35 +6,70 @@ import { motion, AnimatePresence } from "framer-motion";
 
 import { Project } from "@/types";
 import { colors } from "@/styles/variables";
+import { LinkStyles, P_MediumStyles, P_SmallStyles } from "@/styles/type";
 
 const CardCont = styled(Link)`
     scroll-snap-align: start;
     width: 30vw;
     max-width: 500px;
     max-height: 530px;
-    background-color: ${colors.neutral1000};
-    display: flex;
-    flex-direction: column;
 
     &:hover {
         .card__dropdown {
-            height: fit-content;
+            transform: translateY(0);
         }
     }
 
     .card {
+        &__inner-container {
+            background-color: ${colors.neutral1000};
+            position: relative;
+            overflow: hidden;
+        }
+
         &__image {
+            height: 95%;
+            width: 30vw;
+            max-width: 500px;
+        }
+
+        &__dropdown {
+            z-index: 5;
+            background-color: ${colors.accent500}55;
+            position: absolute;
+            height: fit-content;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             width: 100%;
-            object-fit: cover;
+            height: 100%;
+            bottom: 0;
+            left: 0;
+            transform: translateY(100%);
+            transition: transform 0.5s ease-out;
         }
 
         &__heading {
             padding: 15px 0;
-            color: ${colors.neutral200};
+            color: ${colors.neutral900};
         }
 
-        &__dropdown {
-            height: 0;
+        &__description {
+            color: ${colors.neutral300};
+            ${P_MediumStyles};
+            padding: 0 15px;
+        }
+
+        &__content-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            ${P_SmallStyles};
+            ${LinkStyles}
+        }
+        &__content {
+            color: ${colors.neutral300};
         }
     }
 `;
@@ -60,42 +95,49 @@ const Card = forwardRef<HTMLAnchorElement, Project>(
                 onMouseOver={() => setShowDropdown(true)}
                 onMouseOut={() => setShowDropdown(false)}
             >
-                <Image
-                    className="card__image"
-                    src={previewImage.imageUrl}
-                    alt={previewImage.imageAlt}
-                    height={500}
-                    width={500}
-                />
+                <div className="card__inner-container">
+                    <Image
+                        className="card__image"
+                        src={previewImage.imageUrl}
+                        alt={previewImage.imageAlt}
+                        height={500}
+                        width={500}
+                    />
+
+                    <div className="card__dropdown">
+                        <p className="card__description">{description}</p>
+                        <div className="card__content-container">
+                            <Link
+                                href={{
+                                    pathname: `/projects/${id}`,
+                                    query: { category: "apps" },
+                                }}
+                                className="card__content"
+                            >
+                                {apps.length} apps
+                            </Link>
+                            <Link
+                                href={{
+                                    pathname: `/projects/${id}`,
+                                    query: { category: "videos" },
+                                }}
+                                className="card__content"
+                            >
+                                {videos.length} videos
+                            </Link>
+                            <Link
+                                href={{
+                                    pathname: `/projects/${id}`,
+                                    query: { category: "publications" },
+                                }}
+                                className="card__content"
+                            >
+                                {publications.length} publications
+                            </Link>
+                        </div>
+                    </div>
+                </div>
                 <h6 className="card__heading">{title}</h6>
-                <AnimatePresence>
-                    {showDropdown && (
-                        <motion.div
-                            initial={false}
-                            animate={{
-                                opacity: 1,
-                                transition: { duration: 0.3 },
-                            }}
-                            exit={{
-                                opacity: 0,
-                                transition: { duration: 0.5 },
-                            }}
-                            className="card__dropdown"
-                        >
-                            <p className="card__description">{description}</p>
-                            <div className="card__content-container">
-                                {/* NEED TO MAKE LINKS AND ADD PATHS WITH FILTERING */}
-                                <p className="card__apps">{apps.length} apps</p>
-                                <p className="card__apps">
-                                    {videos.length} videos
-                                </p>
-                                <p className="card__apps">
-                                    {publications.length} publications
-                                </p>
-                            </div>
-                        </motion.div>
-                    )}
-                </AnimatePresence>
             </CardCont>
         );
     }

@@ -1,8 +1,12 @@
+import react, { useState } from "react";
 import data from "@/pages/api/data.json";
-import { GetStaticPropsContext } from "next";
+import { GetServerSidePropsContext, GetStaticPropsContext } from "next";
+import ProjectTemplate from "@/components/projectTemplate/Index";
+import { Project } from "@/types";
 
 interface ProjectProps {
-    data: string;
+    data: Project;
+    category: string;
 }
 
 interface Paths {
@@ -12,29 +16,35 @@ interface Paths {
 }
 
 export default function Projects(props: ProjectProps) {
-    const projects = props.data;
+    const [category, setCategory] = useState(props.category);
+    const project = props.data;
+
+    console.log(project);
+
     return (
         <>
-            <p>stuff</p>
+            <ProjectTemplate />
         </>
     );
 }
 
-export async function getStaticPaths() {
-    const paths: Paths[] = [];
-    const dataFilter = data.projects.map((project) => {
-        const projectIds = project.projects.map((p) => {
-            paths.push({ params: { slug: p.id } });
-        });
-    });
+// export async function getStaticPaths() {
+//     const paths: Paths[] = [];
+//     const dataFilter = data.projects.map((project) => {
+//         const projectIds = project.projects.map((p) => {
+//             paths.push({ params: { slug: p.id } });
+//         });
+//     });
 
-    return {
-        paths,
-        fallback: "blocking",
-    };
-}
+//     return {
+//         paths,
+//         fallback: "blocking",
+//     };
+// }
 
-export const getStaticProps = async (context: GetStaticPropsContext) => {
+export const getServerSideProps = async (
+    context: GetServerSidePropsContext
+) => {
     // use context to get poject id in slug, use to filter project data
     const projectId = context?.params?.slug;
 
@@ -48,12 +58,17 @@ export const getStaticProps = async (context: GetStaticPropsContext) => {
         }
     });
 
-    const finalProjectData = projectData.filter((data) => data !== undefined);
-    // filters to see if vdieo, app or publications are selected and filter down the carousel items
+    const finalProjectData = projectData.filter(
+        (data) => data !== undefined
+    )[0]![0]!;
+
+    // check if query params for filters
+    const category = context.query.category || "";
 
     return {
         props: {
             data: finalProjectData,
+            category: category,
         },
     };
 };

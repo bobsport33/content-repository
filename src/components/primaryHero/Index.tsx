@@ -5,6 +5,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 
 import { HeroProps } from "@/types";
 import { colors } from "@/styles/variables";
+import { EyebrowStyles } from "@/styles/type";
 
 const PrimaryHeroContainer = styled.section`
     position: relative;
@@ -54,6 +55,7 @@ const PrimaryHeroContainer = styled.section`
         }
 
         &__eyebrow {
+            ${EyebrowStyles}
             text-align: center;
         }
 
