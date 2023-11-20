@@ -1,4 +1,3 @@
-import react, { useState } from "react";
 import data from "@/pages/api/data.json";
 import { GetServerSidePropsContext, GetStaticPropsContext } from "next";
 import ProjectTemplate from "@/components/projectTemplate/Index";
@@ -16,16 +15,8 @@ interface Paths {
 }
 
 export default function Projects(props: ProjectProps) {
-    const [category, setCategory] = useState(props.category);
     const project = props.data;
-
-    console.log(project);
-
-    return (
-        <>
-            <ProjectTemplate />
-        </>
-    );
+    return <ProjectTemplate {...project} category={props.category} />;
 }
 
 // export async function getStaticPaths() {

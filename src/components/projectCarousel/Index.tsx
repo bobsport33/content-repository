@@ -57,19 +57,26 @@ const Carousel = styled.section`
             }
 
             &--prev {
+                z-index: 25;
                 transform: rotate(180deg);
                 justify-self: flex-start;
 
                 position: absolute;
-                top: calc(50% - 17px);
-                left: 0;
+                top: calc(50% - 25px);
+                left: 20px;
+                transition: transform 0.3s;
+
+                &:hover {
+                    transform: scale(1.05);
+                }
             }
 
             &--next {
+                z-index: 25;
                 justify-self: flex-end;
                 position: absolute;
-                top: calc(50% - 17px);
-                right: 0;
+                top: calc(50% - 25px);
+                right: 25px;
             }
 
             svg {
@@ -122,7 +129,7 @@ const ProjectCarousel = ({ projectCategory, projects }: ProjectCollection) => {
     };
     return (
         <Carousel>
-            <h4 className="carousel__title">{projectCategory}</h4>
+            <h3 className="carousel__title">{projectCategory}</h3>
             <div className="carousel__container" ref={carousel}>
                 {projects &&
                     projects.map((project) => {

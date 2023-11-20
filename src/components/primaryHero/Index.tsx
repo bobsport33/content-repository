@@ -13,7 +13,7 @@ const PrimaryHeroContainer = styled.section`
     overflow: hidden;
     display: flex;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
 
     .hero {
         &__background-image {
@@ -32,9 +32,9 @@ const PrimaryHeroContainer = styled.section`
 
         &__earth-image {
             position: absolute;
-            top: 300px;
-            left: 0;
-            width: 100%;
+            top: 100px;
+            left: -25%;
+            width: 150%;
             height: auto;
         }
 
@@ -52,6 +52,8 @@ const PrimaryHeroContainer = styled.section`
             gap: 15px;
             padding: 20px;
             z-index: 10;
+            height: fit-content;
+            margin-top: 75px;
         }
 
         &__eyebrow {

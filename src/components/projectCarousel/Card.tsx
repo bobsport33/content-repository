@@ -12,7 +12,6 @@ const CardCont = styled(Link)`
     scroll-snap-align: start;
     width: 30vw;
     max-width: 500px;
-    max-height: 530px;
 
     &:hover {
         .card__dropdown {
@@ -28,20 +27,21 @@ const CardCont = styled(Link)`
         }
 
         &__image {
-            height: 95%;
+            height: 100%;
             width: 30vw;
             max-width: 500px;
         }
 
         &__dropdown {
             z-index: 5;
-            background-color: ${colors.accent500}55;
+            background-color: ${colors.primary500}77;
             position: absolute;
             height: fit-content;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            gap: 15px;
             width: 100%;
             height: 100%;
             bottom: 0;
@@ -56,20 +56,27 @@ const CardCont = styled(Link)`
         }
 
         &__description {
-            color: ${colors.neutral300};
+            color: ${colors.neutral100};
             ${P_MediumStyles};
-            padding: 0 15px;
+            padding: 0 25px;
         }
 
         &__content-container {
             display: flex;
             flex-direction: row;
             justify-content: space-evenly;
+            gap: 20px;
             ${P_SmallStyles};
-            ${LinkStyles}
         }
+
         &__content {
-            color: ${colors.neutral300};
+            width: fit-content;
+            ${LinkStyles};
+            color: ${colors.neutral100};
+
+            &::after {
+                background-color: ${colors.neutral100} !important;
+            }
         }
     }
 `;
@@ -87,14 +94,8 @@ const Card = forwardRef<HTMLAnchorElement, Project>(
         }: Project,
         ref
     ) => {
-        const [showDropdown, setShowDropdown] = useState(false);
         return (
-            <CardCont
-                ref={ref}
-                href={`/projects/${id}`}
-                onMouseOver={() => setShowDropdown(true)}
-                onMouseOut={() => setShowDropdown(false)}
-            >
+            <CardCont ref={ref} href={`/projects/${id}`}>
                 <div className="card__inner-container">
                     <Image
                         className="card__image"
@@ -116,6 +117,7 @@ const Card = forwardRef<HTMLAnchorElement, Project>(
                             >
                                 {apps.length} apps
                             </Link>
+
                             <Link
                                 href={{
                                     pathname: `/projects/${id}`,
