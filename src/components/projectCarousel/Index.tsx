@@ -4,9 +4,12 @@ import styled from "styled-components";
 import { ProjectCollection } from "@/types";
 import Card from "./Card";
 import { Container } from "@/styles/mixins";
+import Arrow from "@/styles/svg/arrow.svg";
+import { colors } from "@/styles/variables";
 
 const Carousel = styled.section`
     ${Container};
+    position: relative;
 
     .carousel {
         &__title {
@@ -23,6 +26,62 @@ const Carousel = styled.section`
 
             &::-webkit-scrollbar {
                 display: none;
+            }
+        }
+
+        &__btn-container {
+            /* position: absolute;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 25px; */
+        }
+
+        &__btn {
+            height: 70px;
+            width: 50px;
+            border-radius: 10px;
+            background-color: ${colors.neutral300};
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &__inner {
+                height: 35px;
+                width: 35px;
+                pointer-events: none;
+            }
+
+            &--prev {
+                transform: rotate(180deg);
+                justify-self: flex-start;
+
+                position: absolute;
+                top: calc(50% - 17px);
+                left: 0;
+            }
+
+            &--next {
+                justify-self: flex-end;
+                position: absolute;
+                top: calc(50% - 17px);
+                right: 0;
+            }
+
+            svg {
+                pointer-events: none;
+
+                path {
+                    fill: ${colors.primary500} !important;
+                }
+            }
+
+            &:hover {
+                cursor: pointer;
             }
         }
     }
@@ -76,26 +135,30 @@ const ProjectCarousel = ({ projectCategory, projects }: ProjectCollection) => {
                         );
                     })}
             </div>
-            <div className="carousel__btn-container">
-                {cardIndex != 0 && (
-                    <div
-                        className="carousel__btn carousel__btn--prev"
-                        id="prev"
-                        onClick={clickHandler}
-                    >
-                        previous
+            {/* <div className="carousel__btn-container"> */}
+            {cardIndex != 0 && (
+                <div
+                    className="carousel__btn carousel__btn--prev"
+                    id="prev"
+                    onClick={clickHandler}
+                >
+                    <div className="carousel__btn__inner">
+                        <Arrow />
                     </div>
-                )}
-                {projects.length > 1 && cardIndex !== projects.length - 1 && (
-                    <div
-                        className="carousel__btn"
-                        id="next"
-                        onClick={clickHandler}
-                    >
-                        next
+                </div>
+            )}
+            {projects.length > 1 && cardIndex !== projects.length - 1 && (
+                <div
+                    className="carousel__btn carousel__btn--next"
+                    id="next"
+                    onClick={clickHandler}
+                >
+                    <div className="carousel__btn__inner">
+                        <Arrow />
                     </div>
-                )}
-            </div>
+                </div>
+            )}
+            {/* </div> */}
         </Carousel>
     );
 };

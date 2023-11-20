@@ -5,13 +5,16 @@ import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 
 import { Project } from "@/types";
+import { colors } from "@/styles/variables";
 
 const CardCont = styled(Link)`
     scroll-snap-align: start;
-    flex-shrink: 0;
-    width: 33vw;
+    width: 30vw;
     max-width: 500px;
-    max-height: 340px;
+    max-height: 530px;
+    background-color: ${colors.neutral1000};
+    display: flex;
+    flex-direction: column;
 
     &:hover {
         .card__dropdown {
@@ -22,6 +25,12 @@ const CardCont = styled(Link)`
     .card {
         &__image {
             width: 100%;
+            object-fit: cover;
+        }
+
+        &__heading {
+            padding: 15px 0;
+            color: ${colors.neutral200};
         }
 
         &__dropdown {
@@ -55,7 +64,7 @@ const Card = forwardRef<HTMLAnchorElement, Project>(
                     className="card__image"
                     src={previewImage.imageUrl}
                     alt={previewImage.imageAlt}
-                    height={300}
+                    height={500}
                     width={500}
                 />
                 <h6 className="card__heading">{title}</h6>

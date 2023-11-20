@@ -60,13 +60,13 @@ const Footer = () => {
 
     return (
         <FooterContainer>
-            <Image
+            {/* <Image
                 src=""
                 alt=""
                 height={100}
                 width={300}
                 className="footer__logo"
-            />
+            /> */}
             <div className="footer__link-container">
                 <Link className="footer__link" href={"/projects"}>
                     Projects

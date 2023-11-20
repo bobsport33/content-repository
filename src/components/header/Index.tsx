@@ -38,8 +38,9 @@ const Header = () => {
         <HeaderContainer>
             <Link className="header__logo-container" href={"/"}>
                 <p className="header__title">
-                    BioSynth <br />
-                    Pharmaceuticals
+                    {/* BioSynth <br />
+                    Pharmaceuticals */}
+                    title
                 </p>
             </Link>
             <div className="header__link-container">

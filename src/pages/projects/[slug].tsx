@@ -22,7 +22,7 @@ export default function Projects(props: ProjectProps) {
 
 export async function getStaticPaths() {
     const paths: Paths[] = [];
-    const something = data.projects.map((project) => {
+    const dataFilter = data.projects.map((project) => {
         const projectIds = project.projects.map((p) => {
             paths.push({ params: { slug: p.id } });
         });
@@ -35,14 +35,25 @@ export async function getStaticPaths() {
 }
 
 export const getStaticProps = async (context: GetStaticPropsContext) => {
-    console.log(context);
-    // use context to get poject id in slug, use to pull only that project data
+    // use context to get poject id in slug, use to filter project data
+    const projectId = context?.params?.slug;
 
-    const projectData = data.projects;
+    const projectData = data.projects.map((project) => {
+        const filteredProject = project.projects.filter((p) => {
+            return p.id === projectId;
+        });
+
+        if (filteredProject.length > 0) {
+            return filteredProject;
+        }
+    });
+
+    const finalProjectData = projectData.filter((data) => data !== undefined);
+    // filters to see if vdieo, app or publications are selected and filter down the carousel items
 
     return {
         props: {
-            data: projectData,
+            data: finalProjectData,
         },
     };
 };
