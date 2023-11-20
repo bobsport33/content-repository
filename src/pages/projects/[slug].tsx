@@ -2,6 +2,7 @@ import data from "@/pages/api/data.json";
 import { GetServerSidePropsContext, GetStaticPropsContext } from "next";
 import ProjectTemplate from "@/components/projectTemplate/Index";
 import { Project } from "@/types";
+import Head from "next/head";
 
 interface ProjectProps {
     data: Project;
@@ -16,22 +17,22 @@ interface Paths {
 
 export default function Projects(props: ProjectProps) {
     const project = props.data;
-    return <ProjectTemplate {...project} category={props.category} />;
+    return (
+        <>
+            {" "}
+            <Head>
+                <title>{project.title}</title>
+                <meta name="description" content={project.description} />
+                <meta
+                    name="viewport"
+                    content="width=device-width, initial-scale=1"
+                />
+                <link rel="icon" href="/favicon.ico" />
+            </Head>
+            <ProjectTemplate {...project} category={props.category} />
+        </>
+    );
 }
-
-// export async function getStaticPaths() {
-//     const paths: Paths[] = [];
-//     const dataFilter = data.projects.map((project) => {
-//         const projectIds = project.projects.map((p) => {
-//             paths.push({ params: { slug: p.id } });
-//         });
-//     });
-
-//     return {
-//         paths,
-//         fallback: "blocking",
-//     };
-// }
 
 export const getServerSideProps = async (
     context: GetServerSidePropsContext
@@ -39,7 +40,7 @@ export const getServerSideProps = async (
     // use context to get poject id in slug, use to filter project data
     const projectId = context?.params?.slug;
 
-    const projectData = data.projects.map((project) => {
+    const projectData = data.projects.projects.map((project) => {
         const filteredProject = project.projects.filter((p) => {
             return p.id === projectId;
         });

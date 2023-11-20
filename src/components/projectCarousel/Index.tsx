@@ -97,7 +97,7 @@ const Carousel = styled.section`
 const ProjectCarousel = ({ projectCategory, projects }: ProjectCollection) => {
     const [cardIndex, setCardIndex] = useState(0);
     const carousel = useRef<HTMLDivElement>(null);
-    const cardElement = useRef<HTMLAnchorElement>(null);
+    const cardElement = useRef<HTMLDivElement>(null);
 
     const clickHandler = (e: React.MouseEvent<HTMLDivElement>) => {
         const targetId = (e.target as HTMLDivElement)?.id;

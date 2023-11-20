@@ -7,8 +7,9 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Project } from "@/types";
 import { colors } from "@/styles/variables";
 import { LinkStyles, P_MediumStyles, P_SmallStyles } from "@/styles/type";
+import { useRouter } from "next/router";
 
-const CardCont = styled(Link)`
+const CardCont = styled.div`
     scroll-snap-align: start;
     width: 30vw;
     max-width: 500px;
@@ -81,7 +82,7 @@ const CardCont = styled(Link)`
     }
 `;
 
-const Card = forwardRef<HTMLAnchorElement, Project>(
+const Card = forwardRef<HTMLDivElement, Project>(
     (
         {
             id,
@@ -94,8 +95,15 @@ const Card = forwardRef<HTMLAnchorElement, Project>(
         }: Project,
         ref
     ) => {
+        const router = useRouter();
+
+        const cardClickHandler = () => {
+            router.push({
+                pathname: `/projects/${id}`,
+            });
+        };
         return (
-            <CardCont ref={ref} href={`/projects/${id}`}>
+            <CardCont ref={ref} onClick={cardClickHandler}>
                 <div className="card__inner-container">
                     <Image
                         className="card__image"
