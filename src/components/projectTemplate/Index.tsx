@@ -13,21 +13,20 @@ interface ProjectProps extends Project {
 }
 
 const ProjectTemplateCont = styled.section`
-    ${Container};
     display: flex;
     justify-content: center;
     gap: 40px;
 
     .project {
         &__content {
-            width: 100%;
+            width: 50%;
         }
 
         &__title {
         }
 
         &__image {
-            width: 100%;
+            max-width: 100%;
             height: auto;
             object-fit: cover;
         }

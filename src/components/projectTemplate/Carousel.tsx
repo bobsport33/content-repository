@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import Image from "next/image";
-import { colors } from "@/styles/variables";
 import { motion, AnimatePresence } from "framer-motion";
+
+import { colors } from "@/styles/variables";
 
 interface CarouselProps {
     content: CarouselItem[];
@@ -17,16 +18,40 @@ interface CarouselItem {
 }
 
 const CarouselCont = styled.div`
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
     .carousel {
         &__title {
         }
 
+        &__image-wrap {
+            position: relative;
+            height: 500px;
+            max-width: 700px;
+        }
+
+        &__image-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+        }
+
         &__image {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            aspect-ratio: 7 / 5;
         }
 
         &__btn-container {
             display: flex;
             flex-direction: row;
+            justify-content: center;
             gap: 10px;
         }
 
@@ -36,6 +61,10 @@ const CarouselCont = styled.div`
             border: none;
             border-radius: 8px;
             background-color: ${colors.primary400};
+
+            &--active {
+                background-color: ${colors.accent400};
+            }
         }
     }
 `;
@@ -51,23 +80,26 @@ const Carousel = ({ content }: CarouselProps) => {
     return (
         <CarouselCont>
             <h6 className="carousel__title">{featuredContent.title}</h6>
-            <AnimatePresence>
-                <motion.div
-                    key={featuredContent.title}
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    exit={{ opacity: 0 }}
-                    transition={{ duration: 1 }}
-                >
-                    <Image
-                        className="carousel__image"
-                        src={featuredContent.image.imageUrl}
-                        alt={featuredContent.image.imageAlt}
-                        height={500}
-                        width={700}
-                    />
-                </motion.div>
-            </AnimatePresence>
+            <div className="carousel__image-wrap">
+                <AnimatePresence>
+                    <motion.div
+                        className="carousel__image-container"
+                        key={featuredContent.title}
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        exit={{ opacity: 0 }}
+                        transition={{ duration: 1 }}
+                    >
+                        <Image
+                            className="carousel__image"
+                            src={featuredContent.image.imageUrl}
+                            alt={featuredContent.image.imageAlt}
+                            height={500}
+                            width={700}
+                        />
+                    </motion.div>
+                </AnimatePresence>
+            </div>
             <div className="carousel__btn-container">
                 {content &&
                     content.map((c, i) => {
@@ -75,7 +107,11 @@ const Carousel = ({ content }: CarouselProps) => {
                             <button
                                 key={i}
                                 onClick={updateCarouselHandler}
-                                className="carousel__btn"
+                                className={
+                                    featuredContent.title === c.title
+                                        ? "carousel__btn carousel__btn--active"
+                                        : "carousel__btn"
+                                }
                                 id={String(i)}
                             ></button>
                         );
