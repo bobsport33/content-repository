@@ -9,7 +9,7 @@ import { Project } from "@/types";
 const CardCont = styled(Link)`
     scroll-snap-align: start;
     flex-shrink: 0;
-    width: 41vw;
+    width: 33vw;
     max-width: 500px;
     max-height: 340px;
 
@@ -75,6 +75,7 @@ const Card = forwardRef<HTMLAnchorElement, Project>(
                         >
                             <p className="card__description">{description}</p>
                             <div className="card__content-container">
+                                {/* NEED TO MAKE LINKS AND ADD PATHS WITH FILTERING */}
                                 <p className="card__apps">{apps.length} apps</p>
                                 <p className="card__apps">
                                     {videos.length} videos

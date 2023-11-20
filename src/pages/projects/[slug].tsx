@@ -5,6 +5,12 @@ interface ProjectProps {
     data: string;
 }
 
+interface Paths {
+    params: {
+        slug: string;
+    };
+}
+
 export default function Projects(props: ProjectProps) {
     const projects = props.data;
     return (
@@ -15,15 +21,12 @@ export default function Projects(props: ProjectProps) {
 }
 
 export async function getStaticPaths() {
-    // const res = await fetchAPI("photo-albums", {
-    //     populate: "deep",
-    // });
-
-    // const paths = res.data.map((album) => ({
-    //     params: { slug: album.attributes.seo.slug },
-    // }));
-
-    const paths = [];
+    const paths: Paths[] = [];
+    const something = data.projects.map((project) => {
+        const projectIds = project.projects.map((p) => {
+            paths.push({ params: { slug: p.id } });
+        });
+    });
 
     return {
         paths,
@@ -33,6 +36,7 @@ export async function getStaticPaths() {
 
 export const getStaticProps = async (context: GetStaticPropsContext) => {
     console.log(context);
+    // use context to get poject id in slug, use to pull only that project data
 
     const projectData = data.projects;
 
