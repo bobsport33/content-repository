@@ -79,6 +79,7 @@ export interface Project {
     description: string;
     projectOverview: string;
     apps: {
+        id: string;
         title: string;
         image: {
             imageUrl: string;
@@ -86,13 +87,14 @@ export interface Project {
         };
     }[];
     videos: {
+        id: string;
         title: string;
-        image: {
-            imageUrl: string;
-            imageAlt: string;
+        video: {
+            videoUIrl: string;
         };
     }[];
     publications: {
+        id: string;
         title: string;
         image: {
             imageUrl: string;

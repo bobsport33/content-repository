@@ -10,10 +10,14 @@ interface CarouselProps {
 }
 
 interface CarouselItem {
+    id: string;
     title: string;
-    image: {
+    image?: {
         imageUrl: string;
         imageAlt: string;
+    };
+    video?: {
+        videoUrl: string;
     };
 }
 
@@ -29,17 +33,28 @@ const CarouselCont = styled.div`
 
         &__image-wrap {
             position: relative;
-            height: 100%;
+            height: 500px;
         }
 
         &__image-container {
             width: 100%;
+            position: relative;
+            height: 500px;
+            position: absolute;
+            top: 0;
+            left: 0;
         }
 
         &__image {
             width: 100%;
-            height: auto;
+            height: 500px;
             object-fit: cover;
+            aspect-ratio: 7 / 5;
+        }
+
+        &__video {
+            width: 100%;
+            height: 500px;
             aspect-ratio: 7 / 5;
         }
 
@@ -79,19 +94,33 @@ const Carousel = ({ content }: CarouselProps) => {
                 <AnimatePresence>
                     <motion.div
                         className="carousel__image-container"
-                        key={featuredContent.title}
+                        key={featuredContent.id}
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         exit={{ opacity: 0 }}
                         transition={{ duration: 1 }}
                     >
-                        <Image
-                            className="carousel__image"
-                            src={featuredContent.image.imageUrl}
-                            alt={featuredContent.image.imageAlt}
-                            height={500}
-                            width={700}
-                        />
+                        {featuredContent.hasOwnProperty("image") && (
+                            <Image
+                                className="carousel__image"
+                                src={featuredContent.image?.imageUrl}
+                                alt={featuredContent.image?.imageAlt}
+                                height={500}
+                                width={700}
+                            />
+                        )}
+                        {!featuredContent.hasOwnProperty("image") && (
+                            <iframe
+                                className="carousel__video"
+                                width="560"
+                                height="315"
+                                src="https://www.youtube.com/embed/2U-UJl2h9eY?si=2ocoNDKa6vJOzi4Y"
+                                title="YouTube video player"
+                                frameBorder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowFullScreen
+                            ></iframe>
+                        )}
                     </motion.div>
                 </AnimatePresence>
             </a>
@@ -103,7 +132,7 @@ const Carousel = ({ content }: CarouselProps) => {
                                 key={i}
                                 onClick={updateCarouselHandler}
                                 className={
-                                    featuredContent.title === c.title
+                                    featuredContent.id === c.id
                                         ? "carousel__btn carousel__btn--active"
                                         : "carousel__btn"
                                 }

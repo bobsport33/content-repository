@@ -123,16 +123,14 @@
             "videos": [
                 {
                     "title": "video title",
-                    "image": {
-                        "imageUrl": "https://picsum.photos/370/245",
-                        "imageAlt": "alt text"
+                    "video": {
+                        "videoUrl": "https://www.youtube.com/watch?v=2U-UJl2h9eY"
                     }
                 },
                 {
                     "title": "video title",
-                    "image": {
-                        "imageUrl": "https://picsum.photos/370/245",
-                        "imageAlt": "alt text"
+                    "video": {
+                        "videoUrl": "https://www.youtube.com/watch?v=2U-UJl2h9eY"
                     }
                 }
             ],
@@ -179,6 +177,7 @@
                         "projectOverview": "amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pulvinar sapien et ligula ullamcorper malesuada. Pellentesque adipiscing commodo elit at imperdiet dui. Semper feugiat nibh sed pulvinar proin gravida. Donec pretium vulputate sapien nec sagittis aliquam malesuada. Ullamcorper sit amet risus nullam eget felis eget nunc. Mattis pellentesque id nibh tortor. Mattis enim ut tellus elementum sagittis vitae. Scelerisque viverra mauris in aliquam sem fringilla ut. Non nisi est sit amet facilisis magna etiam. Molestie ac feugiat sed lectus vestibulum mattis.",
                         "apps": [
                             {
+                                "id": "b7a67b24-743e-42c1-b7a5-f8140aff83e7",
                                 "title": "app title",
                                 "image": {
                                     "imageUrl": "https://picsum.photos/370/245",
@@ -186,6 +185,7 @@
                                 }
                             },
                             {
+                                "id": "s267b24-743e-42c1-345w-f8140aff83e7",
                                 "title": "app title",
                                 "image": {
                                     "imageUrl": "https://picsum.photos/370/245",
@@ -193,6 +193,7 @@
                                 }
                             },
                             {
+                                "id": "52dj524-743e-42c1-b7a5-f8140aff83e7",
                                 "title": "app title",
                                 "image": {
                                     "imageUrl": "https://picsum.photos/370/245",
@@ -202,22 +203,23 @@
                         ],
                         "videos": [
                             {
+                                "id": "kd982-743e-42c1-b7a5-f8140aff83e7",
                                 "title": "video title",
-                                "image": {
-                                    "imageUrl": "https://picsum.photos/370/245",
-                                    "imageAlt": "alt text"
+                                "video": {
+                                    "videoUrl": "https://www.youtube.com/watch?v=2U-UJl2h9eY"
                                 }
                             },
                             {
+                                "id": "dk2345-sadolik124-42c1-b7a5-f8140aff83e7",
                                 "title": "video title",
-                                "image": {
-                                    "imageUrl": "https://picsum.photos/370/245",
-                                    "imageAlt": "alt text"
+                                "video": {
+                                    "videoUrl": "https://www.youtube.com/watch?v=2U-UJl2h9eY"
                                 }
                             }
                         ],
                         "publications": [
                             {
+                                "id": "4dd34af7-7175-46dc-87c3-36ce3cbaa5e0",
                                 "title": "publication title",
                                 "image": {
                                     "imageUrl": "https://picsum.photos/370/245",
@@ -225,6 +227,7 @@
                                 }
                             },
                             {
+                                "id": "12lpo-e-7175-46dc-87c3-36ce3cbaa5e0",
                                 "title": "publication title",
                                 "image": {
                                     "imageUrl": "https://picsum.photos/370/245",
@@ -232,6 +235,7 @@
                                 }
                             },
                             {
+                                "id": "b737315b-6350-4dcd-916a-001e17ac5c98",
                                 "title": "publication title",
                                 "image": {
                                     "imageUrl": "https://picsum.photos/370/245",
@@ -255,6 +259,7 @@
                         "projectOverview": "amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pulvinar sapien et ligula ullamcorper malesuada. Pellentesque adipiscing commodo elit at imperdiet dui. Semper feugiat nibh sed pulvinar proin gravida. Donec pretium vulputate sapien nec sagittis aliquam malesuada. Ullamcorper sit amet risus nullam eget felis eget nunc. Mattis pellentesque id nibh tortor. Mattis enim ut tellus elementum sagittis vitae. Scelerisque viverra mauris in aliquam sem fringilla ut. Non nisi est sit amet facilisis magna etiam. Molestie ac feugiat sed lectus vestibulum mattis.",
                         "apps": [
                             {
+                                "id": "sdf26d345-fdgsd-001e17ac5c98",
                                 "title": "app title",
                                 "image": {
                                     "imageUrl": "https://picsum.photos/370/245",
@@ -262,6 +267,7 @@
                                 }
                             },
                             {
+                                "id": "869fa9ae-3636-422c-92bd-facfbc825cda",
                                 "title": "app title",
                                 "image": {
                                     "imageUrl": "https://picsum.photos/370/245",
@@ -269,6 +275,7 @@
                                 }
                             },
                             {
+                                "id": "96ea8b28-87c8-4a5b-b8c1-0272f67ac7ee",
                                 "title": "app title",
                                 "image": {
                                     "imageUrl": "https://picsum.photos/370/245",
@@ -278,22 +285,23 @@
                         ],
                         "videos": [
                             {
+                                "id": "40f1fa97-f62a-4e6c-b2c2-16695a0c7d3ae",
                                 "title": "video title",
-                                "image": {
-                                    "imageUrl": "https://picsum.photos/370/245",
-                                    "imageAlt": "alt text"
+                                "video": {
+                                    "videoUrl": "https://www.youtube.com/watch?v=2U-UJl2h9eY"
                                 }
                             },
                             {
+                                "id": "8137f9f6-d2d2-466e-854e-708926d5ae04e",
                                 "title": "video title",
-                                "image": {
-                                    "imageUrl": "https://picsum.photos/370/245",
-                                    "imageAlt": "alt text"
+                                "video": {
+                                    "videoUrl": "https://www.youtube.com/watch?v=2U-UJl2h9eY"
                                 }
                             }
                         ],
                         "publications": [
                             {
+                                "id": "sdf2-d2d2-466e-854e-708926d5ae04e",
                                 "title": "publication title",
                                 "image": {
                                     "imageUrl": "https://picsum.photos/370/245",
@@ -301,6 +309,7 @@
                                 }
                             },
                             {
+                                "id": "2345d-d2d2-466e-854e-708926d5ae04e",
                                 "title": "publication title",
                                 "image": {
                                     "imageUrl": "https://picsum.photos/370/245",
@@ -308,6 +317,7 @@
                                 }
                             },
                             {
+                                "id": "8234137f9f6-d2d2-466e-854e-708926d5ae04e",
                                 "title": "publication title",
                                 "image": {
                                     "imageUrl": "https://picsum.photos/370/245",
@@ -331,6 +341,7 @@
                         "projectOverview": "amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pulvinar sapien et ligula ullamcorper malesuada. Pellentesque adipiscing commodo elit at imperdiet dui. Semper feugiat nibh sed pulvinar proin gravida. Donec pretium vulputate sapien nec sagittis aliquam malesuada. Ullamcorper sit amet risus nullam eget felis eget nunc. Mattis pellentesque id nibh tortor. Mattis enim ut tellus elementum sagittis vitae. Scelerisque viverra mauris in aliquam sem fringilla ut. Non nisi est sit amet facilisis magna etiam. Molestie ac feugiat sed lectus vestibulum mattis.",
                         "apps": [
                             {
+                                "id": "813asdf7f9f6-d2d2-466e-854e-708926d5ae04e",
                                 "title": "app title",
                                 "image": {
                                     "imageUrl": "https://picsum.photos/370/245",
@@ -338,6 +349,7 @@
                                 }
                             },
                             {
+                                "id": "768543-d2d2-466e-854e-708926d5ae04e",
                                 "title": "app title",
                                 "image": {
                                     "imageUrl": "https://picsum.photos/370/245",
@@ -345,6 +357,7 @@
                                 }
                             },
                             {
+                                "id": "d455as65-d2d2-466e-854e-708926d5ae04e",
                                 "title": "app title",
                                 "image": {
                                     "imageUrl": "https://picsum.photos/370/245",
@@ -354,22 +367,30 @@
                         ],
                         "videos": [
                             {
+                                "id": "23142-d2d2-466e-854e-708926d5ae04e",
                                 "title": "video title",
-                                "image": {
-                                    "imageUrl": "https://picsum.photos/370/245",
-                                    "imageAlt": "alt text"
+                                "video": {
+                                    "videoUrl": "https://www.youtube.com/watch?v=2U-UJl2h9eY"
                                 }
                             },
                             {
+                                "id": "81hjghjs37f9f6-d2d2-466e-854e-708926d5ae04e",
                                 "title": "video title",
-                                "image": {
-                                    "imageUrl": "https://picsum.photos/370/245",
-                                    "imageAlt": "alt text"
+                                "video": {
+                                    "videoUrl": "https://www.youtube.com/watch?v=2U-UJl2h9eY"
+                                }
+                            },
+                            {
+                                "id": "sdwet334-d2d2-466e-854e-708926d5ae04e",
+                                "title": "video title",
+                                "video": {
+                                    "videoUrl": "https://www.youtube.com/watch?v=2U-UJl2h9eY"
                                 }
                             }
                         ],
                         "publications": [
                             {
+                                "id": "ah21054hjf8-d2d2-466e-854e-708926d5ae04e",
                                 "title": "publication title",
                                 "image": {
                                     "imageUrl": "https://picsum.photos/370/245",
@@ -377,6 +398,7 @@
                                 }
                             },
                             {
+                                "id": "6588924ddd-d2d2-466e-854e-708926d5ae04e",
                                 "title": "publication title",
                                 "image": {
                                     "imageUrl": "https://picsum.photos/370/245",
@@ -384,6 +406,7 @@
                                 }
                             },
                             {
+                                "id": "3-55d2d2-466e-854e-708926d5ae04e",
                                 "title": "publication title",
                                 "image": {
                                     "imageUrl": "https://picsum.photos/370/245",
@@ -407,6 +430,7 @@
                         "projectOverview": "amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pulvinar sapien et ligula ullamcorper malesuada. Pellentesque adipiscing commodo elit at imperdiet dui. Semper feugiat nibh sed pulvinar proin gravida. Donec pretium vulputate sapien nec sagittis aliquam malesuada. Ullamcorper sit amet risus nullam eget felis eget nunc. Mattis pellentesque id nibh tortor. Mattis enim ut tellus elementum sagittis vitae. Scelerisque viverra mauris in aliquam sem fringilla ut. Non nisi est sit amet facilisis magna etiam. Molestie ac feugiat sed lectus vestibulum mattis.",
                         "apps": [
                             {
+                                "id": "8137f9f6-d2d2-sdfq32312q-854e-708926d5ae04e",
                                 "title": "app title",
                                 "image": {
                                     "imageUrl": "https://picsum.photos/370/245",
@@ -414,6 +438,7 @@
                                 }
                             },
                             {
+                                "id": "8137f9f6-123r1-466e-854e-708926d5ae04e",
                                 "title": "app title",
                                 "image": {
                                     "imageUrl": "https://picsum.photos/370/245",
@@ -421,6 +446,7 @@
                                 }
                             },
                             {
+                                "id": "8137f9f6-d2d2-466e-854e-sdfsq326",
                                 "title": "app title",
                                 "image": {
                                     "imageUrl": "https://picsum.photos/370/245",
@@ -430,22 +456,30 @@
                         ],
                         "videos": [
                             {
+                                "id": "9386cba4-a679-4036-b39a-6f207c26fb78",
                                 "title": "video title",
-                                "image": {
-                                    "imageUrl": "https://picsum.photos/370/245",
-                                    "imageAlt": "alt text"
+                                "video": {
+                                    "videoUrl": "https://www.youtube.com/watch?v=2U-UJl2h9eY"
                                 }
                             },
                             {
+                                "id": "v9386cba4-a679-4036-b39a-6f207c26fb7804e",
                                 "title": "video title",
-                                "image": {
-                                    "imageUrl": "https://picsum.photos/370/245",
-                                    "imageAlt": "alt text"
+                                "video": {
+                                    "videoUrl": "https://www.youtube.com/watch?v=2U-UJl2h9eY"
+                                }
+                            },
+                            {
+                                "id": "8139386cba4-a679-4036-b39a-6f207c26fb787f9f6-d2d2-466e-854e-708926d5ae04e",
+                                "title": "video title",
+                                "video": {
+                                    "videoUrl": "https://www.youtube.com/watch?v=2U-UJl2h9eY"
                                 }
                             }
                         ],
                         "publications": [
                             {
+                                "id": "9386cba4-12324s-4036-b39a-6f207c26fb78",
                                 "title": "publication title",
                                 "image": {
                                     "imageUrl": "https://picsum.photos/370/245",
@@ -453,6 +487,7 @@
                                 }
                             },
                             {
+                                "id": "234asyh56-a679-4036-b39a-6f207c26fb78",
                                 "title": "publication title",
                                 "image": {
                                     "imageUrl": "https://picsum.photos/370/245",
@@ -460,6 +495,7 @@
                                 }
                             },
                             {
+                                "id": "s5d5423-a679-4036-b39a-6f207c26fb78",
                                 "title": "publication title",
                                 "image": {
                                     "imageUrl": "https://picsum.photos/370/245",
@@ -483,6 +519,7 @@
                         "projectOverview": "amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pulvinar sapien et ligula ullamcorper malesuada. Pellentesque adipiscing commodo elit at imperdiet dui. Semper feugiat nibh sed pulvinar proin gravida. Donec pretium vulputate sapien nec sagittis aliquam malesuada. Ullamcorper sit amet risus nullam eget felis eget nunc. Mattis pellentesque id nibh tortor. Mattis enim ut tellus elementum sagittis vitae. Scelerisque viverra mauris in aliquam sem fringilla ut. Non nisi est sit amet facilisis magna etiam. Molestie ac feugiat sed lectus vestibulum mattis.",
                         "apps": [
                             {
+                                "id": "s546f54s65s4df-a679-4036-b39a-6f207c26fb78",
                                 "title": "app title",
                                 "image": {
                                     "imageUrl": "https://picsum.photos/370/245",
@@ -490,6 +527,7 @@
                                 }
                             },
                             {
+                                "id": "asdf4q89r7d65-a679-4036-b39a-6f207c26fb78",
                                 "title": "app title",
                                 "image": {
                                     "imageUrl": "https://picsum.photos/370/245",
@@ -497,6 +535,7 @@
                                 }
                             },
                             {
+                                "id": "d41fd5as5a-a679-4036-b39a-6f207c26fb78",
                                 "title": "app title",
                                 "image": {
                                     "imageUrl": "https://picsum.photos/370/245",
@@ -506,22 +545,44 @@
                         ],
                         "videos": [
                             {
+                                "id": "654sd654-a679-4036-b39a-6f207c26fb78",
                                 "title": "video title",
-                                "image": {
-                                    "imageUrl": "https://picsum.photos/370/245",
-                                    "imageAlt": "alt text"
+                                "video": {
+                                    "videoUrl": "https://www.youtube.com/watch?v=2U-UJl2h9eY"
                                 }
                             },
                             {
+                                "id": "9386cba4-sdf4566s5d4-4036-b39a-6f207c26fb78",
                                 "title": "video title",
-                                "image": {
-                                    "imageUrl": "https://picsum.photos/370/245",
-                                    "imageAlt": "alt text"
+                                "video": {
+                                    "videoUrl": "https://www.youtube.com/watch?v=2U-UJl2h9eY"
+                                }
+                            },
+                            {
+                                "id": "9386cba4-a679-4036-4s5sew-6f207c26fb78",
+                                "title": "video title",
+                                "video": {
+                                    "videoUrl": "https://www.youtube.com/watch?v=2U-UJl2h9eY"
+                                }
+                            },
+                            {
+                                "id": "9386cba4-a679-4036-asdqw3-6f207c26fb78",
+                                "title": "video title",
+                                "video": {
+                                    "videoUrl": "https://www.youtube.com/watch?v=2U-UJl2h9eY"
+                                }
+                            },
+                            {
+                                "id": "9386cba4-a679-2q365s4e-b39a-6f207c26fb78",
+                                "title": "video title",
+                                "video": {
+                                    "videoUrl": "https://www.youtube.com/watch?v=2U-UJl2h9eY"
                                 }
                             }
                         ],
                         "publications": [
                             {
+                                "id": "9386cba4-a679-4036-b39a-a65q43654132",
                                 "title": "publication title",
                                 "image": {
                                     "imageUrl": "https://picsum.photos/370/245",
@@ -529,6 +590,7 @@
                                 }
                             },
                             {
+                                "id": "asdf5644s6542q3-a679-4036-b39a-6f207c26fb78",
                                 "title": "publication title",
                                 "image": {
                                     "imageUrl": "https://picsum.photos/370/245",
@@ -536,6 +598,7 @@
                                 }
                             },
                             {
+                                "id": "asdf6544-asdf24-a679-4036-b39a-6f207c26fb78",
                                 "title": "publication title",
                                 "image": {
                                     "imageUrl": "https://picsum.photos/370/245",
@@ -559,6 +622,7 @@
                         "projectOverview": "amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pulvinar sapien et ligula ullamcorper malesuada. Pellentesque adipiscing commodo elit at imperdiet dui. Semper feugiat nibh sed pulvinar proin gravida. Donec pretium vulputate sapien nec sagittis aliquam malesuada. Ullamcorper sit amet risus nullam eget felis eget nunc. Mattis pellentesque id nibh tortor. Mattis enim ut tellus elementum sagittis vitae. Scelerisque viverra mauris in aliquam sem fringilla ut. Non nisi est sit amet facilisis magna etiam. Molestie ac feugiat sed lectus vestibulum mattis.",
                         "apps": [
                             {
+                                "id": "9386cba4-asdfq-54sd-4036-b39a-6f207c26fb78",
                                 "title": "app title",
                                 "image": {
                                     "imageUrl": "https://picsum.photos/370/245",
@@ -566,6 +630,7 @@
                                 }
                             },
                             {
+                                "id": "s4fd5g6ds-5s9-a679-4036-b39a-6f207c26fb78",
                                 "title": "app title",
                                 "image": {
                                     "imageUrl": "https://picsum.photos/370/245",
@@ -573,6 +638,7 @@
                                 }
                             },
                             {
+                                "id": "as434446gfd-a679-4036-b39a-6f207c26fb78",
                                 "title": "app title",
                                 "image": {
                                     "imageUrl": "https://picsum.photos/370/245",
@@ -582,22 +648,23 @@
                         ],
                         "videos": [
                             {
+                                "id": "08c11e6c-45fd-40be-a627-fe22c0ea779c",
                                 "title": "video title",
-                                "image": {
-                                    "imageUrl": "https://picsum.photos/370/245",
-                                    "imageAlt": "alt text"
+                                "video": {
+                                    "videoUrl": "https://www.youtube.com/watch?v=2U-UJl2h9eY"
                                 }
                             },
                             {
+                                "id": "4d542345-45fd-40be-a627-fe22c0ea779c",
                                 "title": "video title",
-                                "image": {
-                                    "imageUrl": "https://picsum.photos/370/245",
-                                    "imageAlt": "alt text"
+                                "video": {
+                                    "videoUrl": "https://www.youtube.com/watch?v=2U-UJl2h9eY"
                                 }
                             }
                         ],
                         "publications": [
                             {
+                                "id": "08c11e6c-asd32-40be-a627-fe22c0ea779c",
                                 "title": "publication title",
                                 "image": {
                                     "imageUrl": "https://picsum.photos/370/245",
@@ -605,6 +672,7 @@
                                 }
                             },
                             {
+                                "id": "sd5238dda-45fd-40be-a627-fe22c0ea779c",
                                 "title": "publication title",
                                 "image": {
                                     "imageUrl": "https://picsum.photos/370/245",
@@ -612,6 +680,7 @@
                                 }
                             },
                             {
+                                "id": "08c11e6c-s1sd56s4-40be-a627-fe22c0ea779c",
                                 "title": "publication title",
                                 "image": {
                                     "imageUrl": "https://picsum.photos/370/245",
@@ -635,6 +704,7 @@
                         "projectOverview": "amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pulvinar sapien et ligula ullamcorper malesuada. Pellentesque adipiscing commodo elit at imperdiet dui. Semper feugiat nibh sed pulvinar proin gravida. Donec pretium vulputate sapien nec sagittis aliquam malesuada. Ullamcorper sit amet risus nullam eget felis eget nunc. Mattis pellentesque id nibh tortor. Mattis enim ut tellus elementum sagittis vitae. Scelerisque viverra mauris in aliquam sem fringilla ut. Non nisi est sit amet facilisis magna etiam. Molestie ac feugiat sed lectus vestibulum mattis.",
                         "apps": [
                             {
+                                "id": "s454sdf-s45ddf40be-a627-fe22c0ea779c",
                                 "title": "app title",
                                 "image": {
                                     "imageUrl": "https://picsum.photos/370/245",
@@ -642,6 +712,7 @@
                                 }
                             },
                             {
+                                "id": "08c54sd-s54sdf56qwe-sdf-40be-a627-fe22c0ea779c",
                                 "title": "app title",
                                 "image": {
                                     "imageUrl": "https://picsum.photos/370/245",
@@ -649,6 +720,7 @@
                                 }
                             },
                             {
+                                "id": "08c-sdf5-sd-a627-fe22c0ea779c",
                                 "title": "app title",
                                 "image": {
                                     "imageUrl": "https://picsum.photos/370/245",
@@ -658,22 +730,30 @@
                         ],
                         "videos": [
                             {
+                                "id": "ssdfsd-45fd-40be-a627-fe22c0ea779c",
                                 "title": "video title",
-                                "image": {
-                                    "imageUrl": "https://picsum.photos/370/245",
-                                    "imageAlt": "alt text"
+                                "video": {
+                                    "videoUrl": "https://www.youtube.com/watch?v=2U-UJl2h9eY"
                                 }
                             },
                             {
+                                "id": "54dssdsfh-45fd-40be-a627-fe22c0ea779c",
                                 "title": "video title",
-                                "image": {
-                                    "imageUrl": "https://picsum.photos/370/245",
-                                    "imageAlt": "alt text"
+                                "video": {
+                                    "videoUrl": "https://www.youtube.com/watch?v=2U-UJl2h9eY"
+                                }
+                            },
+                            {
+                                "id": "41f41hoiuj-45fd-40be-a627-fe22c0ea779c",
+                                "title": "video title",
+                                "video": {
+                                    "videoUrl": "https://www.youtube.com/watch?v=2U-UJl2h9eY"
                                 }
                             }
                         ],
                         "publications": [
                             {
+                                "id": "08c11e6c-3424dfsg-d54fdf-40be-a627-fe22c0ea779c",
                                 "title": "publication title",
                                 "image": {
                                     "imageUrl": "https://picsum.photos/370/245",
@@ -681,6 +761,7 @@
                                 }
                             },
                             {
+                                "id": "08c11e654sdf-s4sd564fg-54c-45fd-40be-a627-fe22c0ea779c",
                                 "title": "publication title",
                                 "image": {
                                     "imageUrl": "https://picsum.photos/370/245",
@@ -688,6 +769,7 @@
                                 }
                             },
                             {
+                                "id": "sd-sd4dsf54e-45fd-40be-a627-fe22c0ea779c",
                                 "title": "publication title",
                                 "image": {
                                     "imageUrl": "https://picsum.photos/370/245",
@@ -711,6 +793,7 @@
                         "projectOverview": "amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pulvinar sapien et ligula ullamcorper malesuada. Pellentesque adipiscing commodo elit at imperdiet dui. Semper feugiat nibh sed pulvinar proin gravida. Donec pretium vulputate sapien nec sagittis aliquam malesuada. Ullamcorper sit amet risus nullam eget felis eget nunc. Mattis pellentesque id nibh tortor. Mattis enim ut tellus elementum sagittis vitae. Scelerisque viverra mauris in aliquam sem fringilla ut. Non nisi est sit amet facilisis magna etiam. Molestie ac feugiat sed lectus vestibulum mattis.",
                         "apps": [
                             {
+                                "id": "12fhj5-df-45fd-40be-a627-fe22c0ea779c",
                                 "title": "app title",
                                 "image": {
                                     "imageUrl": "https://picsum.photos/370/245",
@@ -718,6 +801,7 @@
                                 }
                             },
                             {
+                                "id": "54ds5s4ser4-sd-45fd-40be-a627-fe22c0ea779c",
                                 "title": "app title",
                                 "image": {
                                     "imageUrl": "https://picsum.photos/370/245",
@@ -725,6 +809,7 @@
                                 }
                             },
                             {
+                                "id": "08c11e6c-45fd-sdf514s-54sdf-a627-fe22c0ea779c",
                                 "title": "app title",
                                 "image": {
                                     "imageUrl": "https://picsum.photos/370/245",
@@ -734,22 +819,30 @@
                         ],
                         "videos": [
                             {
+                                "id": "00d12d93-e14f-490c-841c-8408a290f9a8",
                                 "title": "video title",
-                                "image": {
-                                    "imageUrl": "https://picsum.photos/370/245",
-                                    "imageAlt": "alt text"
+                                "video": {
+                                    "videoUrl": "https://www.youtube.com/watch?v=2U-UJl2h9eY"
                                 }
                             },
                             {
+                                "id": "sdf4534-e14f-490c-841c-8408a290f9a8",
                                 "title": "video title",
-                                "image": {
-                                    "imageUrl": "https://picsum.photos/370/245",
-                                    "imageAlt": "alt text"
+                                "video": {
+                                    "videoUrl": "https://www.youtube.com/watch?v=2U-UJl2h9eY"
+                                }
+                            },
+                            {
+                                "id": "fd844-e14f-490c-841c-8408a290f9a8",
+                                "title": "video title",
+                                "video": {
+                                    "videoUrl": "https://www.youtube.com/watch?v=2U-UJl2h9eY"
                                 }
                             }
                         ],
                         "publications": [
                             {
+                                "id": "0044t65dfgd-d12d93-e14f-490c-841c-8408a290f9a8",
                                 "title": "publication title",
                                 "image": {
                                     "imageUrl": "https://picsum.photos/370/245",
@@ -757,6 +850,7 @@
                                 }
                             },
                             {
+                                "id": "sdf434-sd-e14f-490c-841c-8408a290f9a8",
                                 "title": "publication title",
                                 "image": {
                                     "imageUrl": "https://picsum.photos/370/245",
@@ -764,6 +858,7 @@
                                 }
                             },
                             {
+                                "id": "sdf3425745-e14f-490c-841c-8408a290f9a8",
                                 "title": "publication title",
                                 "image": {
                                     "imageUrl": "https://picsum.photos/370/245",
@@ -792,6 +887,7 @@
                         "projectOverview": "amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pulvinar sapien et ligula ullamcorper malesuada. Pellentesque adipiscing commodo elit at imperdiet dui. Semper feugiat nibh sed pulvinar proin gravida. Donec pretium vulputate sapien nec sagittis aliquam malesuada. Ullamcorper sit amet risus nullam eget felis eget nunc. Mattis pellentesque id nibh tortor. Mattis enim ut tellus elementum sagittis vitae. Scelerisque viverra mauris in aliquam sem fringilla ut. Non nisi est sit amet facilisis magna etiam. Molestie ac feugiat sed lectus vestibulum mattis.",
                         "apps": [
                             {
+                                "id": "213545-fgfg-e14f-490c-841c-8408a290f9a8",
                                 "title": "app title",
                                 "image": {
                                     "imageUrl": "https://picsum.photos/370/245",
@@ -799,6 +895,7 @@
                                 }
                             },
                             {
+                                "id": "00d12d9eae443294-sd3-e14f-490c-841c-8408a290f9a8",
                                 "title": "app title",
                                 "image": {
                                     "imageUrl": "https://picsum.photos/370/245",
@@ -806,6 +903,7 @@
                                 }
                             },
                             {
+                                "id": "sd54322-sdfg-e14f-490c-841c-8408a290f9a8",
                                 "title": "app title",
                                 "image": {
                                     "imageUrl": "https://picsum.photos/370/245",
@@ -815,22 +913,23 @@
                         ],
                         "videos": [
                             {
+                                "id": "nmhg95gh-gh-e14f-490c-841c-8408a290f9a8",
                                 "title": "video title",
-                                "image": {
-                                    "imageUrl": "https://picsum.photos/370/245",
-                                    "imageAlt": "alt text"
+                                "video": {
+                                    "videoUrl": "https://www.youtube.com/watch?v=2U-UJl2h9eY"
                                 }
                             },
                             {
+                                "id": "bvxzc-cvb-e14f-490c-841c-8408a290f9a8",
                                 "title": "video title",
-                                "image": {
-                                    "imageUrl": "https://picsum.photos/370/245",
-                                    "imageAlt": "alt text"
+                                "video": {
+                                    "videoUrl": "https://www.youtube.com/watch?v=2U-UJl2h9eY"
                                 }
                             }
                         ],
                         "publications": [
                             {
+                                "id": "5f81581c-7233-4912-b1e5-4703317d9dff",
                                 "title": "publication title",
                                 "image": {
                                     "imageUrl": "https://picsum.photos/370/245",
@@ -838,6 +937,7 @@
                                 }
                             },
                             {
+                                "id": "354qzaxw-7233-4912-b1e5-4703317d9dff",
                                 "title": "publication title",
                                 "image": {
                                     "imageUrl": "https://picsum.photos/370/245",
@@ -845,6 +945,7 @@
                                 }
                             },
                             {
+                                "id": "5w9878-7233-4912-b1e5-4703317d9dff",
                                 "title": "publication title",
                                 "image": {
                                     "imageUrl": "https://picsum.photos/370/245",
@@ -868,6 +969,7 @@
                         "projectOverview": "amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pulvinar sapien et ligula ullamcorper malesuada. Pellentesque adipiscing commodo elit at imperdiet dui. Semper feugiat nibh sed pulvinar proin gravida. Donec pretium vulputate sapien nec sagittis aliquam malesuada. Ullamcorper sit amet risus nullam eget felis eget nunc. Mattis pellentesque id nibh tortor. Mattis enim ut tellus elementum sagittis vitae. Scelerisque viverra mauris in aliquam sem fringilla ut. Non nisi est sit amet facilisis magna etiam. Molestie ac feugiat sed lectus vestibulum mattis.",
                         "apps": [
                             {
+                                "id": "mnio6fgd-7233-4912-b1e5-4703317d9dff",
                                 "title": "app title",
                                 "image": {
                                     "imageUrl": "https://picsum.photos/370/245",
@@ -875,6 +977,7 @@
                                 }
                             },
                             {
+                                "id": "45f9ufs-7233-4912-b1e5-4703317d9dff",
                                 "title": "app title",
                                 "image": {
                                     "imageUrl": "https://picsum.photos/370/245",
@@ -882,6 +985,7 @@
                                 }
                             },
                             {
+                                "id": "fd4h968ewr-7233-4912-b1e5-4703317d9dff",
                                 "title": "app title",
                                 "image": {
                                     "imageUrl": "https://picsum.photos/370/245",
@@ -891,22 +995,30 @@
                         ],
                         "videos": [
                             {
+                                "id": "5gd9332d-7233-4912-b1e5-4703317d9dff",
                                 "title": "video title",
-                                "image": {
-                                    "imageUrl": "https://picsum.photos/370/245",
-                                    "imageAlt": "alt text"
+                                "video": {
+                                    "videoUrl": "https://www.youtube.com/watch?v=2U-UJl2h9eY"
                                 }
                             },
                             {
+                                "id": "2s54frj-7233-4912-b1e5-4703317d9dff",
                                 "title": "video title",
-                                "image": {
-                                    "imageUrl": "https://picsum.photos/370/245",
-                                    "imageAlt": "alt text"
+                                "video": {
+                                    "videoUrl": "https://www.youtube.com/watch?v=2U-UJl2h9eY"
+                                }
+                            },
+                            {
+                                "id": "vb546f6g-7233-4912-b1e5-4703317d9dff",
+                                "title": "video title",
+                                "video": {
+                                    "videoUrl": "https://www.youtube.com/watch?v=2U-UJl2h9eY"
                                 }
                             }
                         ],
                         "publications": [
                             {
+                                "id": "2a4sd4626-7233-4912-b1e5-4703317d9dff",
                                 "title": "publication title",
                                 "image": {
                                     "imageUrl": "https://picsum.photos/370/245",
@@ -914,6 +1026,7 @@
                                 }
                             },
                             {
+                                "id": "pqo5d45uy-7233-4912-b1e5-4703317d9dff",
                                 "title": "publication title",
                                 "image": {
                                     "imageUrl": "https://picsum.photos/370/245",
@@ -921,6 +1034,7 @@
                                 }
                             },
                             {
+                                "id": "sd6q453543-7233-4912-b1e5-4703317d9dff",
                                 "title": "publication title",
                                 "image": {
                                     "imageUrl": "https://picsum.photos/370/245",
@@ -944,6 +1058,7 @@
                         "projectOverview": "amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pulvinar sapien et ligula ullamcorper malesuada. Pellentesque adipiscing commodo elit at imperdiet dui. Semper feugiat nibh sed pulvinar proin gravida. Donec pretium vulputate sapien nec sagittis aliquam malesuada. Ullamcorper sit amet risus nullam eget felis eget nunc. Mattis pellentesque id nibh tortor. Mattis enim ut tellus elementum sagittis vitae. Scelerisque viverra mauris in aliquam sem fringilla ut. Non nisi est sit amet facilisis magna etiam. Molestie ac feugiat sed lectus vestibulum mattis.",
                         "apps": [
                             {
+                                "id": "d5w5e47-7233-4912-b1e5-4703317d9dff",
                                 "title": "app title",
                                 "image": {
                                     "imageUrl": "https://picsum.photos/370/245",
@@ -951,6 +1066,7 @@
                                 }
                             },
                             {
+                                "id": "dw9656o-7233-4912-b1e5-4703317d9dff",
                                 "title": "app title",
                                 "image": {
                                     "imageUrl": "https://picsum.photos/370/245",
@@ -958,6 +1074,7 @@
                                 }
                             },
                             {
+                                "id": "j6h5kos-7233-4912-b1e5-4703317d9dff",
                                 "title": "app title",
                                 "image": {
                                     "imageUrl": "https://picsum.photos/370/245",
@@ -967,22 +1084,23 @@
                         ],
                         "videos": [
                             {
+                                "id": "5fsdfw74e81581c-7233-4912-b1e5-4703317d9dff",
                                 "title": "video title",
-                                "image": {
-                                    "imageUrl": "https://picsum.photos/370/245",
-                                    "imageAlt": "alt text"
+                                "video": {
+                                    "videoUrl": "https://www.youtube.com/watch?v=2U-UJl2h9eY"
                                 }
                             },
                             {
+                                "id": "5f81581dsf564324c-7233-4912-b1e5-4703317d9dff",
                                 "title": "video title",
-                                "image": {
-                                    "imageUrl": "https://picsum.photos/370/245",
-                                    "imageAlt": "alt text"
+                                "video": {
+                                    "videoUrl": "https://www.youtube.com/watch?v=2U-UJl2h9eY"
                                 }
                             }
                         ],
                         "publications": [
                             {
+                                "id": "5f81583w4t4753224231c-7233-4912-b1e5-4703317d9dff",
                                 "title": "publication title",
                                 "image": {
                                     "imageUrl": "https://picsum.photos/370/245",
@@ -990,6 +1108,7 @@
                                 }
                             },
                             {
+                                "id": "phg65-7233-4912-b1e5-4703317d9dff",
                                 "title": "publication title",
                                 "image": {
                                     "imageUrl": "https://picsum.photos/370/245",
@@ -997,6 +1116,7 @@
                                 }
                             },
                             {
+                                "id": "5f8158165d4f-8945c-7233-4912-b1e5-4703317d9dff",
                                 "title": "publication title",
                                 "image": {
                                     "imageUrl": "https://picsum.photos/370/245",
@@ -1020,6 +1140,7 @@
                         "projectOverview": "amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pulvinar sapien et ligula ullamcorper malesuada. Pellentesque adipiscing commodo elit at imperdiet dui. Semper feugiat nibh sed pulvinar proin gravida. Donec pretium vulputate sapien nec sagittis aliquam malesuada. Ullamcorper sit amet risus nullam eget felis eget nunc. Mattis pellentesque id nibh tortor. Mattis enim ut tellus elementum sagittis vitae. Scelerisque viverra mauris in aliquam sem fringilla ut. Non nisi est sit amet facilisis magna etiam. Molestie ac feugiat sed lectus vestibulum mattis.",
                         "apps": [
                             {
+                                "id": "5f81581asdf68542c-7233-4912-b1e5-4703317d9dff",
                                 "title": "app title",
                                 "image": {
                                     "imageUrl": "https://picsum.photos/370/245",
@@ -1027,6 +1148,7 @@
                                 }
                             },
                             {
+                                "id": "5f81523445dsf81c-7233-4912-b1e5-4703317d9dff",
                                 "title": "app title",
                                 "image": {
                                     "imageUrl": "https://picsum.photos/370/245",
@@ -1034,6 +1156,7 @@
                                 }
                             },
                             {
+                                "id": "5f8dfg68521581c-7233-4912-b1e5-4703317d9dff",
                                 "title": "app title",
                                 "image": {
                                     "imageUrl": "https://picsum.photos/370/245",
@@ -1043,22 +1166,30 @@
                         ],
                         "videos": [
                             {
+                                "id": "2986346985454-7233-4912-b1e5-4703317d9dff",
                                 "title": "video title",
-                                "image": {
-                                    "imageUrl": "https://picsum.photos/370/245",
-                                    "imageAlt": "alt text"
+                                "video": {
+                                    "videoUrl": "https://www.youtube.com/watch?v=2U-UJl2h9eY"
                                 }
                             },
                             {
+                                "id": "dsfw6q5442q-7233-4912-b1e5-4703317d9dff",
                                 "title": "video title",
-                                "image": {
-                                    "imageUrl": "https://picsum.photos/370/245",
-                                    "imageAlt": "alt text"
+                                "video": {
+                                    "videoUrl": "https://www.youtube.com/watch?v=2U-UJl2h9eY"
+                                }
+                            },
+                            {
+                                "id": "5f81581c-72215341154hnaqaw43gdf-33-4912-b1e5-4703317d9dff",
+                                "title": "video title",
+                                "video": {
+                                    "videoUrl": "https://www.youtube.com/watch?v=2U-UJl2h9eY"
                                 }
                             }
                         ],
                         "publications": [
                             {
+                                "id": "asdf25421hjj-7233-4912-b1e5-4703317d9dff",
                                 "title": "publication title",
                                 "image": {
                                     "imageUrl": "https://picsum.photos/370/245",
@@ -1066,6 +1197,7 @@
                                 }
                             },
                             {
+                                "id": "5f81581c-7233-ds2542416564jyt2w-b1e5-4703317d9dff",
                                 "title": "publication title",
                                 "image": {
                                     "imageUrl": "https://picsum.photos/370/245",
@@ -1073,6 +1205,7 @@
                                 }
                             },
                             {
+                                "id": "5f81581c-7233-sdrfg5424115y4-b1e5-4703317d9dff",
                                 "title": "publication title",
                                 "image": {
                                     "imageUrl": "https://picsum.photos/370/245",
@@ -1101,6 +1234,7 @@
                         "projectOverview": "amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pulvinar sapien et ligula ullamcorper malesuada. Pellentesque adipiscing commodo elit at imperdiet dui. Semper feugiat nibh sed pulvinar proin gravida. Donec pretium vulputate sapien nec sagittis aliquam malesuada. Ullamcorper sit amet risus nullam eget felis eget nunc. Mattis pellentesque id nibh tortor. Mattis enim ut tellus elementum sagittis vitae. Scelerisque viverra mauris in aliquam sem fringilla ut. Non nisi est sit amet facilisis magna etiam. Molestie ac feugiat sed lectus vestibulum mattis.",
                         "apps": [
                             {
+                                "id": "26654eq2w958g4s-7233-4912-b1e5-4703317d9dff",
                                 "title": "app title",
                                 "image": {
                                     "imageUrl": "https://picsum.photos/370/245",
@@ -1108,6 +1242,7 @@
                                 }
                             },
                             {
+                                "id": "5f81581c-7233-4912-sdfg56423y2-4703317d9dff",
                                 "title": "app title",
                                 "image": {
                                     "imageUrl": "https://picsum.photos/370/245",
@@ -1115,6 +1250,7 @@
                                 }
                             },
                             {
+                                "id": "5f81581c-7233-4912-b1e5-gf45wq5th4h3",
                                 "title": "app title",
                                 "image": {
                                     "imageUrl": "https://picsum.photos/370/245",
@@ -1124,22 +1260,23 @@
                         ],
                         "videos": [
                             {
+                                "id": "5f81581c-adfg65424244-4912-b1e5-4703317d9dff",
                                 "title": "video title",
-                                "image": {
-                                    "imageUrl": "https://picsum.photos/370/245",
-                                    "imageAlt": "alt text"
+                                "video": {
+                                    "videoUrl": "https://www.youtube.com/watch?v=2U-UJl2h9eY"
                                 }
                             },
                             {
+                                "id": "5f81581c-7233-sadfg5421156-b1e5-4703317d9dff",
                                 "title": "video title",
-                                "image": {
-                                    "imageUrl": "https://picsum.photos/370/245",
-                                    "imageAlt": "alt text"
+                                "video": {
+                                    "videoUrl": "https://www.youtube.com/watch?v=2U-UJl2h9eY"
                                 }
                             }
                         ],
                         "publications": [
                             {
+                                "id": "a2654y332546t-7233-4912-b1e5-4703317d9dff",
                                 "title": "publication title",
                                 "image": {
                                     "imageUrl": "https://picsum.photos/370/245",
@@ -1147,6 +1284,7 @@
                                 }
                             },
                             {
+                                "id": "5f81581c-7233-4912-aergf2654afgq-4703317d9dff",
                                 "title": "publication title",
                                 "image": {
                                     "imageUrl": "https://picsum.photos/370/245",
@@ -1154,6 +1292,7 @@
                                 }
                             },
                             {
+                                "id": "5f81581c-7233-4912-asdfg23w6544t-4703317d9dff",
                                 "title": "publication title",
                                 "image": {
                                     "imageUrl": "https://picsum.photos/370/245",
@@ -1177,6 +1316,7 @@
                         "projectOverview": "amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pulvinar sapien et ligula ullamcorper malesuada. Pellentesque adipiscing commodo elit at imperdiet dui. Semper feugiat nibh sed pulvinar proin gravida. Donec pretium vulputate sapien nec sagittis aliquam malesuada. Ullamcorper sit amet risus nullam eget felis eget nunc. Mattis pellentesque id nibh tortor. Mattis enim ut tellus elementum sagittis vitae. Scelerisque viverra mauris in aliquam sem fringilla ut. Non nisi est sit amet facilisis magna etiam. Molestie ac feugiat sed lectus vestibulum mattis.",
                         "apps": [
                             {
+                                "id": "asy32465435y35yjh-7233-4912-b1e5-4703317d9dff",
                                 "title": "app title",
                                 "image": {
                                     "imageUrl": "https://picsum.photos/370/245",
@@ -1184,6 +1324,7 @@
                                 }
                             },
                             {
+                                "id": "5f81581c-fgh65445y357233-4912-b1e5-4703317d9dff",
                                 "title": "app title",
                                 "image": {
                                     "imageUrl": "https://picsum.photos/370/245",
@@ -1191,6 +1332,7 @@
                                 }
                             },
                             {
+                                "id": "5f81581c-7233-dfg25443t5bgsa-b1e5-4703317d9dff",
                                 "title": "app title",
                                 "image": {
                                     "imageUrl": "https://picsum.photos/370/245",
@@ -1200,22 +1342,30 @@
                         ],
                         "videos": [
                             {
+                                "id": "5f81581c-jh5645opp-4912-b1e5-4703317d9dff",
                                 "title": "video title",
-                                "image": {
-                                    "imageUrl": "https://picsum.photos/370/245",
-                                    "imageAlt": "alt text"
+                                "video": {
+                                    "videoUrl": "https://www.youtube.com/watch?v=2U-UJl2h9eY"
                                 }
                             },
                             {
+                                "id": "5f81581c-7233-4912-ghj654eb1e5-4703317d9dff",
                                 "title": "video title",
-                                "image": {
-                                    "imageUrl": "https://picsum.photos/370/245",
-                                    "imageAlt": "alt text"
+                                "video": {
+                                    "videoUrl": "https://www.youtube.com/watch?v=2U-UJl2h9eY"
+                                }
+                            },
+                            {
+                                "id": "5f81581c-7233-4912-b1e5-fgh65e46354",
+                                "title": "video title",
+                                "video": {
+                                    "videoUrl": "https://www.youtube.com/watch?v=2U-UJl2h9eY"
                                 }
                             }
                         ],
                         "publications": [
                             {
+                                "id": "5f81581c-3654fgnbaedf-4912-b1e5-4703317d9dff",
                                 "title": "publication title",
                                 "image": {
                                     "imageUrl": "https://picsum.photos/370/245",
@@ -1223,6 +1373,7 @@
                                 }
                             },
                             {
+                                "id": "fdg6453454yy65-7233-4912-b1e5-4703317d9dff",
                                 "title": "publication title",
                                 "image": {
                                     "imageUrl": "https://picsum.photos/370/245",
@@ -1230,6 +1381,7 @@
                                 }
                             },
                             {
+                                "id": "gfd125jy46ghk4uiyk-7233-4912-b1e5-4703317d9dff",
                                 "title": "publication title",
                                 "image": {
                                     "imageUrl": "https://picsum.photos/370/245",
@@ -1253,6 +1405,7 @@
                         "projectOverview": "amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pulvinar sapien et ligula ullamcorper malesuada. Pellentesque adipiscing commodo elit at imperdiet dui. Semper feugiat nibh sed pulvinar proin gravida. Donec pretium vulputate sapien nec sagittis aliquam malesuada. Ullamcorper sit amet risus nullam eget felis eget nunc. Mattis pellentesque id nibh tortor. Mattis enim ut tellus elementum sagittis vitae. Scelerisque viverra mauris in aliquam sem fringilla ut. Non nisi est sit amet facilisis magna etiam. Molestie ac feugiat sed lectus vestibulum mattis.",
                         "apps": [
                             {
+                                "id": "5f81581c-7233-4912-b1e5-fa46524654grf",
                                 "title": "app title",
                                 "image": {
                                     "imageUrl": "https://picsum.photos/370/245",
@@ -1260,6 +1413,7 @@
                                 }
                             },
                             {
+                                "id": "5f81581c-7233-4912-dfgh6523w44t24-4703317d9dff",
                                 "title": "app title",
                                 "image": {
                                     "imageUrl": "https://picsum.photos/370/245",
@@ -1267,6 +1421,7 @@
                                 }
                             },
                             {
+                                "id": "5f81581c-7233-4912-sadf65h43hg324-4703317d9dff",
                                 "title": "app title",
                                 "image": {
                                     "imageUrl": "https://picsum.photos/370/245",
@@ -1276,22 +1431,23 @@
                         ],
                         "videos": [
                             {
+                                "id": "5f81581c-asdfg65244ty2-4912-b1e5-4703317d9dff",
                                 "title": "video title",
-                                "image": {
-                                    "imageUrl": "https://picsum.photos/370/245",
-                                    "imageAlt": "alt text"
+                                "video": {
+                                    "videoUrl": "https://www.youtube.com/watch?v=2U-UJl2h9eY"
                                 }
                             },
                             {
+                                "id": "5f81581c-7233-243654fgb42q34-b1e5-4703317d9dff",
                                 "title": "video title",
-                                "image": {
-                                    "imageUrl": "https://picsum.photos/370/245",
-                                    "imageAlt": "alt text"
+                                "video": {
+                                    "videoUrl": "https://www.youtube.com/watch?v=2U-UJl2h9eY"
                                 }
                             }
                         ],
                         "publications": [
                             {
+                                "id": "a6544322345-7233-4912-b1e5-4703317d9dff",
                                 "title": "publication title",
                                 "image": {
                                     "imageUrl": "https://picsum.photos/370/245",
@@ -1299,6 +1455,7 @@
                                 }
                             },
                             {
+                                "id": "dfgh654h632w4-7233-4912-b1e5-4703317d9dff",
                                 "title": "publication title",
                                 "image": {
                                     "imageUrl": "https://picsum.photos/370/245",
@@ -1306,6 +1463,7 @@
                                 }
                             },
                             {
+                                "id": "5f81581c-adrgf652446852443-4912-b1e5-4703317d9dff",
                                 "title": "publication title",
                                 "image": {
                                     "imageUrl": "https://picsum.photos/370/245",
@@ -1329,6 +1487,7 @@
                         "projectOverview": "amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pulvinar sapien et ligula ullamcorper malesuada. Pellentesque adipiscing commodo elit at imperdiet dui. Semper feugiat nibh sed pulvinar proin gravida. Donec pretium vulputate sapien nec sagittis aliquam malesuada. Ullamcorper sit amet risus nullam eget felis eget nunc. Mattis pellentesque id nibh tortor. Mattis enim ut tellus elementum sagittis vitae. Scelerisque viverra mauris in aliquam sem fringilla ut. Non nisi est sit amet facilisis magna etiam. Molestie ac feugiat sed lectus vestibulum mattis.",
                         "apps": [
                             {
+                                "id": "5f81581c-234574ag-4912-b14703317d9dff",
                                 "title": "app title",
                                 "image": {
                                     "imageUrl": "https://picsum.photos/370/245",
@@ -1336,6 +1495,7 @@
                                 }
                             },
                             {
+                                "id": "33-dfg213454912-b1e5-4703317d9dff",
                                 "title": "app title",
                                 "image": {
                                     "imageUrl": "https://picsum.photos/370/245",
@@ -1343,6 +1503,7 @@
                                 }
                             },
                             {
+                                "id": "sfgh4533-4912-adsfg2-4703317d9dff",
                                 "title": "app title",
                                 "image": {
                                     "imageUrl": "https://picsum.photos/370/245",
@@ -1352,22 +1513,37 @@
                         ],
                         "videos": [
                             {
+                                "id": "521128032-34f5-4071-817d-9318899360d5d9dff",
                                 "title": "video title",
-                                "image": {
-                                    "imageUrl": "https://picsum.photos/370/245",
-                                    "imageAlt": "alt text"
+                                "video": {
+                                    "videoUrl": "https://www.youtube.com/watch?v=2U-UJl2h9eY"
                                 }
                             },
                             {
+                                "id": "21128032-34f5-4071-817d-9318899360d5",
                                 "title": "video title",
-                                "image": {
-                                    "imageUrl": "https://picsum.photos/370/245",
-                                    "imageAlt": "alt text"
+                                "video": {
+                                    "videoUrl": "https://www.youtube.com/watch?v=2U-UJl2h9eY"
+                                }
+                            },
+                            {
+                                "id": "5f81581c-7233-4912-b1e5-21128032-34f5-4071-817d-9318899360d5",
+                                "title": "video title",
+                                "video": {
+                                    "videoUrl": "https://www.youtube.com/watch?v=2U-UJl2h9eY"
+                                }
+                            },
+                            {
+                                "id": "5f821128032-34f5-4071-817d-345weffvd",
+                                "title": "video title",
+                                "video": {
+                                    "videoUrl": "https://www.youtube.com/watch?v=2U-UJl2h9eY"
                                 }
                             }
                         ],
                         "publications": [
                             {
+                                "id": "fd4w6554-dfg54d-34f5-4071-817d-345weffvd",
                                 "title": "publication title",
                                 "image": {
                                     "imageUrl": "https://picsum.photos/370/245",
@@ -1375,6 +1551,7 @@
                                 }
                             },
                             {
+                                "id": "5f865d4f4g-s54ww-sdf48gdf5-effvd",
                                 "title": "publication title",
                                 "image": {
                                     "imageUrl": "https://picsum.photos/370/245",
@@ -1382,6 +1559,7 @@
                                 }
                             },
                             {
+                                "id": "5fd9043iuf-fgok4-4kjodfg-7d-345weffvd",
                                 "title": "publication title",
                                 "image": {
                                     "imageUrl": "https://picsum.photos/370/245",
