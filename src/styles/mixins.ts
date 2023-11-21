@@ -21,10 +21,10 @@ export const ButtonStyles = css`
     padding: 10px;
     ${P_MediumStyles};
     border: none;
-    color: ${colors.neutral100};
-    background-color: ${colors.primary500};
+    color: ${colors.neutral1000};
+    background-color: ${colors.accent400};
 
     &:hover {
-        background-color: ${colors.accent200};
+        background-color: ${colors.accent300};
     }
 `;
