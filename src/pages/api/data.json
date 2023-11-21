@@ -106,7 +106,7 @@
         "featuredProject": {
             "id": "ebfa938c-6120-4db9-aa6d-360b295ccf4a",
             "previewImage": {
-                "imageUrl": "https://picsum.photos/370/245",
+                "imageUrl": "/images/dna_blue.jpg",
                 "imageAlt": "alt text"
             },
             "image": {
