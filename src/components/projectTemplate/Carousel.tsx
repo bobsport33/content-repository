@@ -29,15 +29,10 @@ const CarouselCont = styled.div`
 
         &__image-wrap {
             position: relative;
-            height: 500px;
-            max-width: 700px;
+            height: 100%;
         }
 
         &__image-container {
-            position: absolute;
-            top: 0;
-            left: 0;
-            height: 100%;
             width: 100%;
         }
 
@@ -80,7 +75,7 @@ const Carousel = ({ content }: CarouselProps) => {
     return (
         <CarouselCont>
             <h6 className="carousel__title">{featuredContent.title}</h6>
-            <div className="carousel__image-wrap">
+            <a className="carousel__image-wrap" href={"/"} target="_blank">
                 <AnimatePresence>
                     <motion.div
                         className="carousel__image-container"
@@ -99,7 +94,7 @@ const Carousel = ({ content }: CarouselProps) => {
                         />
                     </motion.div>
                 </AnimatePresence>
-            </div>
+            </a>
             <div className="carousel__btn-container">
                 {content &&
                     content.map((c, i) => {

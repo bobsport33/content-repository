@@ -5,6 +5,7 @@ import Link from "next/link";
 import { ContactProps } from "@/types";
 import { Container } from "@/styles/mixins";
 import { LinkStyles, P_MediumStyles } from "@/styles/type";
+import { media } from "@/styles/variables";
 
 const ContactContainer = styled.section`
     ${Container};
@@ -12,10 +13,22 @@ const ContactContainer = styled.section`
     gap: 30px;
     justify-content: center;
 
+    @media ${media.tablet} {
+        flex-direction: column;
+    }
+
     .contact {
         &__map {
             height: 600px;
             width: 800px;
+
+            @media ${media.tablet} {
+                width: 100%;
+            }
+
+            @media ${media.mobile} {
+                height: 300px;
+            }
         }
         &__text-container {
             display: flex;

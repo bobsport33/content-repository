@@ -3,14 +3,18 @@ import styled from "styled-components";
 import Image from "next/image";
 
 import { SecondaryHeroProps } from "@/types";
-import { colors, gradients } from "@/styles/variables";
+import { colors, media } from "@/styles/variables";
 import { EyebrowStyles, P_LargeStyles } from "@/styles/type";
 
 const SecondaryHeroContainer = styled.section`
     position: relative;
     min-height: 700px;
-    /* background: ${gradients.grayGradient}; */
     padding: 150px 200px;
+
+    @media ${media.tablet} {
+        padding: 0;
+        min-height: unset;
+    }
 
     .hero {
         &__text-container {
@@ -19,9 +23,12 @@ const SecondaryHeroContainer = styled.section`
             flex-direction: column;
             gap: 15px;
             padding: 40px;
-            background: ${colors.primary500};
             position: relative;
             z-index: 5;
+
+            @media ${media.tablet} {
+                max-width: 100%;
+            }
 
             &::before {
                 content: "";
@@ -30,7 +37,23 @@ const SecondaryHeroContainer = styled.section`
                 position: absolute;
                 top: -20px;
                 left: -20px;
-                background-color: ${colors.primary300};
+                background-color: ${colors.primary500};
+                z-index: -2;
+
+                @media ${media.tablet} {
+                    top: 20px;
+                    left: 0;
+                }
+            }
+
+            &::after {
+                content: "";
+                height: 100%;
+                width: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                background: ${colors.primary300};
                 z-index: -1;
             }
         }
@@ -56,6 +79,10 @@ const SecondaryHeroContainer = styled.section`
             top: 0;
             left: 0;
             z-index: -10;
+
+            @media ${media.tablet} {
+                position: static;
+            }
         }
 
         &__image {

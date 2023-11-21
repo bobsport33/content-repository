@@ -18,6 +18,7 @@ const FooterContainer = styled.footer`
 
     .footer {
         &__logo {
+            color: ${colors.neutral200};
         }
         &__link-container {
             display: flex;
@@ -60,13 +61,10 @@ const Footer = () => {
 
     return (
         <FooterContainer>
-            {/* <Image
-                src=""
-                alt=""
-                height={100}
-                width={300}
-                className="footer__logo"
-            /> */}
+            <h5 className="footer__logo">
+                Lobos <br />
+                Pharmaceuticals
+            </h5>
             <div className="footer__link-container">
                 <Link className="footer__link" href={"/projects"}>
                     Projects

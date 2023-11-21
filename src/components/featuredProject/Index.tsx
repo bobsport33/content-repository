@@ -21,11 +21,12 @@ const FeaturedProjectCont = styled.div`
 
         &__text-container {
             padding: 20px;
-            background-color: ${colors.neutral200}66;
             display: flex;
             flex-direction: column;
             gap: 15px;
+            position: relative;
             z-index: 10;
+            height: 100%;
         }
     }
 `;

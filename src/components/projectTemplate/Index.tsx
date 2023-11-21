@@ -15,12 +15,12 @@ interface ProjectProps extends Project {
 const ProjectTemplateCont = styled.section`
     display: flex;
     justify-content: center;
-    gap: 40px;
+    gap: 80px;
+    padding: 30px;
 
     .project {
         &__content {
-            width: 50%;
-            padding: 30px 0;
+            width: 40%;
             display: flex;
             flex-direction: column;
             gap: 20px;
@@ -60,9 +60,7 @@ const ProjectTemplateCont = styled.section`
         }
 
         &__carousel-container {
-            padding: 30px 0;
-            height: 100%;
-            width: 40%;
+            width: 60%;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -163,13 +161,16 @@ const ProjectTemplate = ({
                         {publications.length} publications
                     </button>
                     {filterCategory !== "" && (
-                        <button
-                            className="project__filter-btn"
-                            onClick={filterHandler}
-                            id=""
-                        >
-                            {publications.length} All
-                        </button>
+                        <>
+                            <p className="project__spacer">|</p>
+                            <button
+                                className="project__filter-btn"
+                                onClick={filterHandler}
+                                id=""
+                            >
+                                {publications.length} All
+                            </button>
+                        </>
                     )}
                 </div>
             </div>

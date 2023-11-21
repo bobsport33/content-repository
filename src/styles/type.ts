@@ -146,6 +146,10 @@ export const LinkStyles = css`
         right: 0;
         background-color: ${colors.neutral1000};
         transition: width 0.3s;
+
+        @media ${media.tablet} {
+            display: none;
+        }
     }
 
     &:hover {

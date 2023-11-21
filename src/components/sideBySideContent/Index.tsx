@@ -6,7 +6,7 @@ import { SideBySideProps } from "@/types";
 import Image from "next/image";
 import { Container } from "@/styles/mixins";
 import { P_MediumStyles } from "@/styles/type";
-import { colors } from "@/styles/variables";
+import { colors, media } from "@/styles/variables";
 
 interface SideBySideContainerProps {
     $imageOnRight?: boolean;
@@ -18,6 +18,10 @@ const SideBySideContainer = styled.section<SideBySideContainerProps>`
     gap: 50px;
     justify-content: space-around;
     align-items: center;
+
+    @media ${media.tablet} {
+        flex-direction: column;
+    }
 
     ${({ $imageOnRight }) => {
         if (!$imageOnRight) {
@@ -41,16 +45,33 @@ const SideBySideContainer = styled.section<SideBySideContainerProps>`
 
         &__image-container {
             position: relative;
+
+            @media ${media.tablet} {
+                width: 100%;
+            }
+            @media ${media.mobile} {
+                max-height: 300px;
+            }
+        }
+
+        &__image {
+            width: 100%;
+            padding-left: 32px;
+
+            @media ${media.mobile} {
+                max-height: 300px;
+            }
         }
 
         &__image-background {
             position: absolute;
             height: 100%;
-            width: 100%;
+            width: calc(100% - 32px);
             top: -20px;
-            left: -20px;
+            left: 0;
             z-index: -1;
             background-color: ${colors.accent300};
+            padding-left: 32px;
         }
     }
 `;

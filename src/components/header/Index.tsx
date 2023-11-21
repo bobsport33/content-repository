@@ -66,11 +66,11 @@ const HeaderContainer = styled.nav<HeaderContainerProps>`
         &__link {
             ${P_LargeStyles};
             ${LinkStyles};
-            padding: 15px 40px 15px 20px;
 
             @media ${media.tablet} {
                 transition: opacity 0.3s 0.3s;
                 opacity: 0;
+                padding: 15px 40px 15px 20px;
             }
         }
 
