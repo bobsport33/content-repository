@@ -1,7 +1,8 @@
-import FeaturedProject from "@/components/featuredProject/Index";
-import ProjectCarousel from "@/components/projectCarousel/Index";
 import data from "@/pages/api/data.json";
 import Head from "next/head";
+
+import FeaturedProject from "@/components/featuredProject/Index";
+import ProjectCarousel from "@/components/projectCarousel/Index";
 
 import { Project, ProjectCollection } from "@/types";
 interface Props {

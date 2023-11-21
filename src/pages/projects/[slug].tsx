@@ -1,8 +1,9 @@
+import Head from "next/head";
 import data from "@/pages/api/data.json";
 import { GetServerSidePropsContext, GetStaticPropsContext } from "next";
+
 import ProjectTemplate from "@/components/projectTemplate/Index";
 import { Project } from "@/types";
-import Head from "next/head";
 
 interface ProjectProps {
     data: Project;
