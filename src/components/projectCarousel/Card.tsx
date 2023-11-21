@@ -40,7 +40,12 @@ const CardCont = styled.div`
             box-sizing: border-box;
             display: flex;
             flex-direction: column;
-            height: 225px;
+
+            height: 300px;
+
+            @media ${media.tablet} {
+                height: 225px;
+            }
 
             @media ${media.mobile} {
                 height: 175px;
@@ -130,7 +135,6 @@ const Card = forwardRef<HTMLDivElement, Project>(
         const cardClickHandler = (e: React.MouseEvent<HTMLDivElement>) => {
             // Check if the click originated from a Link element
             if (e.target instanceof HTMLAnchorElement) {
-                // Click originated from a Link, don't perform router push
                 return;
             }
 
