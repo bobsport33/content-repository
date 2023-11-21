@@ -3,6 +3,7 @@ import styled, { css } from "styled-components";
 import Link from "next/link";
 import { LinkStyles, P_LargeStyles } from "@/styles/type";
 import { colors, media } from "@/styles/variables";
+import HamburgerMenu from "./HamburgerMenu";
 
 interface HeaderContainerProps {
     $modalOpen: boolean;
@@ -11,6 +12,7 @@ interface HeaderContainerProps {
 const HeaderContainer = styled.nav<HeaderContainerProps>`
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 30px 50px;
     background-color: ${colors.neutral300};
     position: relative;
@@ -98,10 +100,9 @@ const Header = () => {
                     Pharmaceuticals
                 </p>
             </Link>
-            <button
-                className="header__mobile-menu"
-                onClick={openModalHandler}
-            ></button>
+            <button className="header__mobile-menu" onClick={openModalHandler}>
+                <HamburgerMenu onClick={openModalHandler} />
+            </button>
             <div className="header__link-container">
                 <Link
                     className="header__link"

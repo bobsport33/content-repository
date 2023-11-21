@@ -5,7 +5,7 @@ import { useRouter } from "next/router";
 
 import { Project } from "@/types";
 import Carousel from "./Carousel";
-import { Container } from "@/styles/mixins";
+import { media } from "@/styles/variables";
 import { LinkStyles, P_MediumStyles } from "@/styles/type";
 
 interface ProjectProps extends Project {
@@ -13,14 +13,21 @@ interface ProjectProps extends Project {
 }
 
 const ProjectTemplateCont = styled.section`
-    display: flex;
-    justify-content: center;
-    gap: 80px;
+    display: grid;
+    grid-template-columns: 40% 1fr;
+    column-gap: 80px;
     padding: 30px;
+
+    @media ${media.tablet} {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
 
     .project {
         &__content {
-            width: 40%;
+            grid-column: 1 / 2;
+            width: 100%;
             display: flex;
             flex-direction: column;
             gap: 20px;
@@ -30,6 +37,7 @@ const ProjectTemplateCont = styled.section`
         }
 
         &__image {
+            width: 100%;
             max-width: 100%;
             height: auto;
             object-fit: cover;
@@ -60,7 +68,8 @@ const ProjectTemplateCont = styled.section`
         }
 
         &__carousel-container {
-            width: 60%;
+            grid-column: 2 / 3;
+            width: 100%;
             display: flex;
             flex-direction: column;
             justify-content: center;

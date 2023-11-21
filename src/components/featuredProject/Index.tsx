@@ -5,6 +5,7 @@ import Link from "next/link";
 
 import { Project } from "@/types";
 import { colors } from "@/styles/variables";
+import { ButtonStyles } from "@/styles/mixins";
 
 const FeaturedProjectCont = styled.div`
     position: relative;
@@ -28,6 +29,10 @@ const FeaturedProjectCont = styled.div`
             z-index: 10;
             height: 100%;
         }
+
+        &__btn {
+            ${ButtonStyles};
+        }
     }
 `;
 
@@ -44,7 +49,9 @@ const FeaturedProject = ({ id, previewImage, title, description }: Project) => {
             <div className="featured__text-container">
                 <h1 className="featured__title">{title}</h1>
                 <p className="featured__description">{description}</p>
-                <Link href={`/projects/${id}`}>Read More</Link>
+                <Link href={`/projects/${id}`} className="featured__btn">
+                    Read More
+                </Link>
             </div>
         </FeaturedProjectCont>
     );
