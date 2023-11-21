@@ -25,7 +25,8 @@ const CardCont = styled.div`
         &__inner-container {
             background-color: ${colors.neutral1000};
             position: relative;
-            overflow: hidden;
+            overflow-y: hidden;
+            box-sizing: border-box;
         }
 
         &__image {
