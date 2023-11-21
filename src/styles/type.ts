@@ -88,12 +88,13 @@ export const H6_styles = css`
     line-height: 2.1362rem;
 
     @media ${media.tablet} {
-        // Styles don't change on tablet
+        font-size: 1.75rem;
+        line-height: 1.8687rem;
     }
 
     @media ${media.mobile} {
-        font-size: 1.75rem;
-        line-height: 1.8687rem;
+        font-size: 1.6rem;
+        line-height: 1.7rem;
     }
 `;
 

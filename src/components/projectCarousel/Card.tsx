@@ -5,8 +5,8 @@ import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 
 import { Project } from "@/types";
-import { colors } from "@/styles/variables";
-import { LinkStyles, P_MediumStyles, P_SmallStyles } from "@/styles/type";
+import { colors, media } from "@/styles/variables";
+import { P_MediumStyles, P_SmallStyles } from "@/styles/type";
 import { useRouter } from "next/router";
 
 const CardCont = styled.div`
@@ -15,6 +15,15 @@ const CardCont = styled.div`
     max-width: 500px;
     display: flex;
     flex-direction: column;
+    position: relative;
+
+    @media ${media.tablet} {
+        width: 40vw;
+    }
+
+    @media ${media.mobile} {
+        width: 48vw;
+    }
 
     &:hover {
         cursor: pointer;
@@ -27,16 +36,22 @@ const CardCont = styled.div`
         &__inner-container {
             background-color: ${colors.neutral1000};
             position: relative;
-            overflow-y: hidden;
+            overflow: hidden;
             box-sizing: border-box;
             display: flex;
             flex-direction: column;
+            height: 225px;
+
+            @media ${media.mobile} {
+                height: 175px;
+            }
         }
 
         &__image {
             height: 100%;
             width: 30vw;
             max-width: 500px;
+            object-fit: cover;
         }
 
         &__dropdown {
