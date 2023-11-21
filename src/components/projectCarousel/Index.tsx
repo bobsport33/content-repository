@@ -148,7 +148,7 @@ const ProjectCarousel = ({ projectCategory, projects }: ProjectCollection) => {
                     </div>
                 </div>
             )}
-            {projects.length > 1 && cardIndex !== projects.length - 1 && (
+            {projects.length > 1 && cardIndex !== projects.length - 2 && (
                 <div
                     className="carousel__btn carousel__btn--next"
                     id="next"

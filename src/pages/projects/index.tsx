@@ -3,12 +3,11 @@ import Head from "next/head";
 
 import FeaturedProject from "@/components/featuredProject/Index";
 import ProjectCarousel from "@/components/projectCarousel/Index";
-import { Project, ProjectCollection, BackgroundProps } from "@/types";
+import { Project, ProjectCollection } from "@/types";
 
 interface Props {
     data: ProjectCollection[];
     featuredProject: Project;
-  
 }
 
 export default function Projects(props: Props) {
@@ -30,7 +29,7 @@ export default function Projects(props: Props) {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <FeaturedProject {...featuredProject} />
-          
+
             {projects &&
                 projects.map((project, i) => {
                     return (
@@ -53,7 +52,6 @@ export const getStaticProps = async () => {
         props: {
             data: projectData,
             featuredProject: featuredProject,
-         
         },
     };
 };
