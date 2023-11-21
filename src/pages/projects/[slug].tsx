@@ -10,17 +10,10 @@ interface ProjectProps {
     category: string;
 }
 
-interface Paths {
-    params: {
-        slug: string;
-    };
-}
-
 export default function Projects(props: ProjectProps) {
     const project = props.data;
     return (
         <>
-            {" "}
             <Head>
                 <title>{project.title}</title>
                 <meta name="description" content={project.description} />
