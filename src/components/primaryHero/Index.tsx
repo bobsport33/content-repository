@@ -4,7 +4,7 @@ import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 
 import { HeroProps } from "@/types";
-import { colors } from "@/styles/variables";
+import { colors, media } from "@/styles/variables";
 import { EyebrowStyles } from "@/styles/type";
 
 const PrimaryHeroContainer = styled.section`
@@ -13,7 +13,10 @@ const PrimaryHeroContainer = styled.section`
     overflow: hidden;
     display: flex;
     justify-content: center;
-    /* align-items: center; */
+
+    @media ${media.tablet} {
+        height: 500px;
+    }
 
     .hero {
         &__background-image {
@@ -36,6 +39,10 @@ const PrimaryHeroContainer = styled.section`
             left: -25%;
             width: 150%;
             height: auto;
+
+            @media ${media.mobile} {
+                top: 200px;
+            }
         }
 
         &__earth {
@@ -54,6 +61,10 @@ const PrimaryHeroContainer = styled.section`
             z-index: 10;
             height: fit-content;
             margin-top: 75px;
+
+            @media ${media.tablet} {
+                max-width: 90%;
+            }
         }
 
         &__eyebrow {
@@ -84,7 +95,7 @@ const PrimaryHero = (props: HeroProps) => {
             </div>
             <motion.div
                 className="hero__earth-image"
-                style={{ rotate: useTransform(scrollY, [0, 5000], [0, 360]) }}
+                style={{ rotate: useTransform(scrollY, [0, 15000], [0, 360]) }}
             >
                 <Image
                     className="hero__earth"

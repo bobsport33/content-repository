@@ -4,9 +4,11 @@ import styled from "styled-components";
 import Link from "next/link";
 
 import { Project } from "@/types";
+import { colors } from "@/styles/variables";
 
 const FeaturedProjectCont = styled.div`
     position: relative;
+    height: 600px;
 
     .featured {
         &__background-image {
@@ -18,15 +20,17 @@ const FeaturedProjectCont = styled.div`
         }
 
         &__text-container {
+            padding: 20px;
+            background-color: ${colors.neutral200}66;
             display: flex;
             flex-direction: column;
             gap: 15px;
+            z-index: 10;
         }
     }
 `;
 
 const FeaturedProject = ({ id, previewImage, title, description }: Project) => {
-    const clickHandler = () => {};
     return (
         <FeaturedProjectCont>
             <Image
@@ -34,7 +38,7 @@ const FeaturedProject = ({ id, previewImage, title, description }: Project) => {
                 src={previewImage.imageUrl}
                 alt={previewImage.imageAlt}
                 height={600}
-                width={1000}
+                width={1500}
             />
             <div className="featured__text-container">
                 <h1 className="featured__title">{title}</h1>

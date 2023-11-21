@@ -7,10 +7,10 @@ export const Container = css`
     padding: 80px 32px;
 
     @media ${media.tablet} {
-        padding: 0 24px;
+        padding: 36px 24px;
     }
 
     @media ${media.mobile} {
-        padding: 0 16px;
+        padding: 28px 16px;
     }
 `;

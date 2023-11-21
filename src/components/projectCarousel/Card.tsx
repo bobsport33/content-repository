@@ -15,6 +15,7 @@ const CardCont = styled.div`
     max-width: 500px;
 
     &:hover {
+        cursor: pointer;
         .card__dropdown {
             transform: translateY(0);
         }
@@ -70,10 +71,19 @@ const CardCont = styled.div`
             ${P_SmallStyles};
         }
 
+        &__spacer {
+            color: ${colors.neutral100};
+        }
+
         &__content {
             width: fit-content;
-            ${LinkStyles};
+            text-decoration: underline;
             color: ${colors.neutral100};
+            transition: transform 0.3s;
+
+            &:hover {
+                transform: scale(1.05);
+            }
 
             &::after {
                 background-color: ${colors.neutral100} !important;
@@ -125,7 +135,7 @@ const Card = forwardRef<HTMLDivElement, Project>(
                             >
                                 {apps.length} apps
                             </Link>
-
+                            <p className="card__spacer">|</p>
                             <Link
                                 href={{
                                     pathname: `/projects/${id}`,
@@ -135,6 +145,7 @@ const Card = forwardRef<HTMLDivElement, Project>(
                             >
                                 {videos.length} videos
                             </Link>
+                            <p className="card__spacer">|</p>
                             <Link
                                 href={{
                                     pathname: `/projects/${id}`,

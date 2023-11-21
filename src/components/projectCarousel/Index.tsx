@@ -29,18 +29,6 @@ const Carousel = styled.section`
             }
         }
 
-        &__btn-container {
-            /* position: absolute;
-            height: 100%;
-            width: 100%;
-            top: 0;
-            left: 0;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 25px; */
-        }
-
         &__btn {
             height: 70px;
             width: 50px;
@@ -58,13 +46,15 @@ const Carousel = styled.section`
 
             &--prev {
                 z-index: 25;
-                transform: rotate(180deg);
                 justify-self: flex-start;
-
                 position: absolute;
                 top: calc(50% - 25px);
                 left: 20px;
                 transition: transform 0.3s;
+
+                svg {
+                    transform: rotate(180deg);
+                }
 
                 &:hover {
                     transform: scale(1.05);
@@ -142,7 +132,7 @@ const ProjectCarousel = ({ projectCategory, projects }: ProjectCollection) => {
                         );
                     })}
             </div>
-            {/* <div className="carousel__btn-container"> */}
+
             {cardIndex != 0 && (
                 <div
                     className="carousel__btn carousel__btn--prev"
@@ -165,7 +155,6 @@ const ProjectCarousel = ({ projectCategory, projects }: ProjectCollection) => {
                     </div>
                 </div>
             )}
-            {/* </div> */}
         </Carousel>
     );
 };

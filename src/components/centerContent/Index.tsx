@@ -4,7 +4,7 @@ import Image from "next/image";
 
 import { CenterContentProps } from "@/types";
 import { Container } from "@/styles/mixins";
-import { colors } from "@/styles/variables";
+import { colors, media } from "@/styles/variables";
 import { EyebrowStyles } from "@/styles/type";
 
 const CenterContentContainer = styled.section`
@@ -13,7 +13,7 @@ const CenterContentContainer = styled.section`
     align-items: center;
     gap: 30px;
     ${Container};
-    background-color: ${colors.neutral600};
+    background-color: ${colors.neutral300};
 
     .content {
         &__text-container {
@@ -22,6 +22,10 @@ const CenterContentContainer = styled.section`
             align-items: center;
             gap: 15px;
             max-width: 800px;
+
+            @media ${media.tablet} {
+                max-width: 90%;
+            }
         }
 
         &__eyebrow {
@@ -31,6 +35,18 @@ const CenterContentContainer = styled.section`
 
         &__heading {
             text-align: center;
+        }
+
+        &__description {
+            text-align: center;
+        }
+
+        &__image {
+            object-fit: cover;
+
+            @media ${media.tablet} {
+                max-width: 90%;
+            }
         }
     }
 `;
@@ -49,6 +65,7 @@ const CenterContent = ({
                 <p className="content__description">{description}</p>
             </div>
             <Image
+                className="content__image"
                 src={image.imageUrl}
                 alt={image.imageAlt}
                 height={500}

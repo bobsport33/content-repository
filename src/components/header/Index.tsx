@@ -12,9 +12,9 @@ const HeaderContainer = styled.nav<HeaderContainerProps>`
     display: flex;
     justify-content: space-between;
     padding: 30px 50px;
-    background-color: transparent;
+    background-color: ${colors.neutral300};
     position: relative;
-    height: 96px;
+    height: 132px;
     overflow: hidden;
     transition: overflow 0.5s;
 
@@ -22,12 +22,19 @@ const HeaderContainer = styled.nav<HeaderContainerProps>`
         if ($modalOpen) {
             return css`
                 overflow: visible;
+
+                .header__link-container {
+                    height: 124px !important;
+                }
+
+                .header__link {
+                    opacity: 1 !important;
+                }
             `;
         }
     }}
 
     .header {
-        height: 96px;
         &__title-container {
         }
 
@@ -46,18 +53,33 @@ const HeaderContainer = styled.nav<HeaderContainerProps>`
             @media ${media.tablet} {
                 position: absolute;
                 right: 0;
-                top: 96px;
+                top: 132px;
+                height: 0;
                 background-color: ${colors.neutral100};
                 z-index: 10;
                 flex-direction: column;
-                gap: 15px;
-                padding: 20px 40px 20px 20px;
+                gap: 0;
+                transition: height 0.5s ease-out;
             }
         }
 
         &__link {
             ${P_LargeStyles};
             ${LinkStyles};
+            padding: 15px 40px 15px 20px;
+
+            @media ${media.tablet} {
+                transition: opacity 0.3s 0.3s;
+                opacity: 0;
+            }
+        }
+
+        &__mobile-menu {
+            display: none;
+
+            @media ${media.tablet} {
+                display: block;
+            }
         }
     }
 `;
@@ -72,17 +94,27 @@ const Header = () => {
         <HeaderContainer $modalOpen={modalOpen}>
             <Link className="header__logo-container" href={"/"}>
                 <p className="header__title">
-                    {/* BioSynth <br />
-                    Pharmaceuticals */}
-                    title
+                    Lobos <br />
+                    Pharmaceuticals
                 </p>
             </Link>
-            <button onClick={openModalHandler}></button>
+            <button
+                className="header__mobile-menu"
+                onClick={openModalHandler}
+            ></button>
             <div className="header__link-container">
-                <Link className="header__link" href={"/projects"}>
+                <Link
+                    className="header__link"
+                    href={"/projects"}
+                    onClick={() => setModalOpen(false)}
+                >
                     Projects
                 </Link>
-                <Link className="header__link" href={"/about"}>
+                <Link
+                    className="header__link"
+                    href={"/about"}
+                    onClick={() => setModalOpen(false)}
+                >
                     About Us
                 </Link>
             </div>

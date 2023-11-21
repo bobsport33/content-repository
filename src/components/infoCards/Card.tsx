@@ -17,7 +17,7 @@ const CardCont = styled(motion.div)`
     padding: 15px;
 
     @media ${media.tablet} {
-        max-width: 700px;
+        max-width: 600px;
     }
 
     .card {

@@ -20,6 +20,10 @@ const ProjectTemplateCont = styled.section`
     .project {
         &__content {
             width: 50%;
+            padding: 30px 0;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
         }
 
         &__title {
@@ -46,7 +50,22 @@ const ProjectTemplateCont = styled.section`
         &__filter-btn {
             background-color: transparent;
             border: none;
-            ${LinkStyles};
+            text-decoration: underline;
+            transition: transform 0.3s;
+
+            &:hover {
+                cursor: pointer;
+                transform: scale(1.05);
+            }
+        }
+
+        &__carousel-container {
+            padding: 30px 0;
+            height: 100%;
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
     }
 `;
@@ -127,6 +146,7 @@ const ProjectTemplate = ({
                     >
                         {apps.length} apps
                     </button>
+                    <p className="project__spacer">|</p>
                     <button
                         className="project__filter-btn"
                         onClick={filterHandler}
@@ -134,6 +154,7 @@ const ProjectTemplate = ({
                     >
                         {videos.length} videos
                     </button>
+                    <p className="project__spacer">|</p>
                     <button
                         className="project__filter-btn"
                         onClick={filterHandler}
@@ -152,7 +173,9 @@ const ProjectTemplate = ({
                     )}
                 </div>
             </div>
-            <Carousel content={carouselContent} />
+            <div className="project__carousel-container">
+                <Carousel content={carouselContent} />
+            </div>
         </ProjectTemplateCont>
     );
 };

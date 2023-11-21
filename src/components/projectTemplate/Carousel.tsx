@@ -18,7 +18,7 @@ interface CarouselItem {
 }
 
 const CarouselCont = styled.div`
-    width: 40%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 15px;
