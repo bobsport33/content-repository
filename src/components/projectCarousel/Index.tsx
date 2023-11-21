@@ -5,7 +5,7 @@ import { ProjectCollection } from "@/types";
 import Card from "./Card";
 import { Container } from "@/styles/mixins";
 import Arrow from "@/styles/svg/arrow.svg";
-import { colors } from "@/styles/variables";
+import { colors, media } from "@/styles/variables";
 
 const Carousel = styled.section`
     ${Container};
@@ -37,6 +37,10 @@ const Carousel = styled.section`
             display: flex;
             justify-content: center;
             align-items: center;
+
+            @media ${media.tablet} {
+                display: none;
+            }
 
             &__inner {
                 height: 35px;

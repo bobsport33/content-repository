@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 
-import { colors } from "@/styles/variables";
+import { colors, media } from "@/styles/variables";
 
 interface CarouselProps {
     content: CarouselItem[];
@@ -34,6 +34,14 @@ const CarouselCont = styled.div`
         &__image-wrap {
             position: relative;
             height: 500px;
+
+            @media ${media.tablet} {
+                height: 400px;
+            }
+
+            @media ${media.mobile} {
+                height: 300px;
+            }
         }
 
         &__image-container {
@@ -43,6 +51,12 @@ const CarouselCont = styled.div`
             position: absolute;
             top: 0;
             left: 0;
+            @media ${media.tablet} {
+                height: 400px;
+            }
+            @media ${media.mobile} {
+                height: 300px;
+            }
         }
 
         &__image {
@@ -50,12 +64,24 @@ const CarouselCont = styled.div`
             height: 500px;
             object-fit: cover;
             aspect-ratio: 7 / 5;
+            @media ${media.tablet} {
+                height: 400px;
+            }
+            @media ${media.mobile} {
+                height: 300px;
+            }
         }
 
         &__video {
             width: 100%;
             height: 500px;
             aspect-ratio: 7 / 5;
+            @media ${media.tablet} {
+                height: 400px;
+            }
+            @media ${media.mobile} {
+                height: 300px;
+            }
         }
 
         &__btn-container {
@@ -87,6 +113,11 @@ const Carousel = ({ content }: CarouselProps) => {
 
         setFeaturedContent(content[+id]);
     };
+
+    useEffect(() => {
+        setFeaturedContent(content[0]);
+    }, [content]);
+
     return (
         <CarouselCont>
             <h6 className="carousel__title">{featuredContent.title}</h6>
@@ -100,16 +131,16 @@ const Carousel = ({ content }: CarouselProps) => {
                         exit={{ opacity: 0 }}
                         transition={{ duration: 1 }}
                     >
-                        {featuredContent.hasOwnProperty("image") && (
+                        {featuredContent.image && (
                             <Image
                                 className="carousel__image"
-                                src={featuredContent.image?.imageUrl}
-                                alt={featuredContent.image?.imageAlt}
+                                src={featuredContent.image.imageUrl}
+                                alt={featuredContent.image.imageAlt}
                                 height={500}
                                 width={700}
                             />
                         )}
-                        {!featuredContent.hasOwnProperty("image") && (
+                        {featuredContent.video && (
                             <iframe
                                 className="carousel__video"
                                 width="560"

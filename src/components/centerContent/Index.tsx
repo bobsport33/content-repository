@@ -5,14 +5,16 @@ import Image from "next/image";
 import { CenterContentProps } from "@/types";
 import { Container } from "@/styles/mixins";
 import { colors, media } from "@/styles/variables";
-import { EyebrowStyles } from "@/styles/type";
+import { EyebrowStyles, P_MediumStyles } from "@/styles/type";
 
 const CenterContentContainer = styled.section`
+    margin: 80px auto;
+    padding: 40px;
+    width: 75%;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 30px;
-    ${Container};
     background-color: ${colors.neutral300};
 
     .content {
@@ -39,6 +41,7 @@ const CenterContentContainer = styled.section`
 
         &__description {
             text-align: center;
+            ${P_MediumStyles}
         }
 
         &__image {

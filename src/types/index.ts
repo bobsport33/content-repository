@@ -90,7 +90,7 @@ export interface Project {
         id: string;
         title: string;
         video: {
-            videoUIrl: string;
+            videoUrl: string;
         };
     }[];
     publications: {
@@ -101,4 +101,13 @@ export interface Project {
             imageAlt: string;
         };
     }[];
+}
+
+export interface CTAProps {
+    heading: string;
+    description: string;
+    button: {
+        href: string;
+        text: string;
+    };
 }

@@ -20,6 +20,10 @@ const HeaderContainer = styled.nav<HeaderContainerProps>`
     overflow: hidden;
     transition: overflow 0.5s;
 
+    @media ${media.mobile} {
+        padding: 15px;
+    }
+
     ${({ $modalOpen }) => {
         if ($modalOpen) {
             return css`

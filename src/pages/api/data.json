@@ -2,11 +2,11 @@
     "home": {
         "primaryHero": {
             "eyebrow": "Dui nunc mattis enim ut tellus",
-            "heading": "sed vulputate odio ut enim blandit ",
+            "heading": "Heading for the site",
             "button": {}
         },
         "infoCards": {
-            "heading": "title",
+            "heading": "Heading for Info Card Module",
             "description": "Nulla at volutpat diam ut venenatis tellus. Viverra justo nec ultrices dui sapien. Cursus turpis massa tincidunt dui ut ornare lectus sit. Justo eget magna fermentum iaculis eu. Neque convallis a cras semper auctor neque vitae.",
             "cardInfo": [
                 {
@@ -37,11 +37,19 @@
         },
         "centerContent": {
             "eyebrow": "Accumsan in nisl nisi scelerisque",
-            "heading": "Sed sed risus pretium quam vulputate dignissim",
+            "heading": "Heading for Content Module",
             "description": "amet commodo nulla facilisi nullam vehicula. Ultrices gravida dictum fusce ut. Ac turpis egestas sed tempus urna et pharetra pharetra. Faucibus a pellentesque sit",
             "image": {
                 "imageUrl": "https://picsum.photos/seed/ssdf/900/600",
                 "imageAlt": ""
+            }
+        },
+        "cta": {
+            "heading": "CTA heading",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "button": {
+                "text": "See Our Projects",
+                "href": "/projects"
             }
         }
     },
