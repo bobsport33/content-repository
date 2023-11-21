@@ -56,6 +56,7 @@ const SideBySideContainer = styled.section<SideBySideContainerProps>`
 
         &__image {
             width: 100%;
+            object-fit: cover;
             padding-left: 32px;
 
             @media ${media.mobile} {

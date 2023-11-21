@@ -68,7 +68,7 @@
         },
         "sideBySideContent": {
             "image": {
-                "imageUrl": "",
+                "imageUrl": "/images/dna.jpg",
                 "imageAlt": "alt text"
             },
             "title": "This is a title",

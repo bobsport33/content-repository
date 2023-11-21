@@ -13,6 +13,8 @@ const CardCont = styled.div`
     scroll-snap-align: start;
     width: 30vw;
     max-width: 500px;
+    display: flex;
+    flex-direction: column;
 
     &:hover {
         cursor: pointer;
@@ -27,6 +29,8 @@ const CardCont = styled.div`
             position: relative;
             overflow-y: hidden;
             box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
         }
 
         &__image {
