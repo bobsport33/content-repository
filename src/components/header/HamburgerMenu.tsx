@@ -1,5 +1,5 @@
 import { colors } from "@/styles/variables";
-import React from "react";
+import React, { Ref, forwardRef } from "react";
 import styled from "styled-components";
 
 interface MenuProps {
@@ -115,19 +115,26 @@ export const MenuCont = styled.div`
     }
 `;
 
-const HamburgerMenu = ({ onClick }: MenuProps) => {
-    return (
-        <MenuCont>
-            <input id="menu-checkbox2" name="menu-checkbox2" type="checkbox" />
-            <label
-                htmlFor="menu-checkbox2"
-                className="menu__label"
-                onClick={onClick}
-            >
-                <div className="menu__hamburger"></div>
-            </label>
-        </MenuCont>
-    );
-};
+const HamburgerMenu = forwardRef<HTMLInputElement, MenuProps>(
+    ({ onClick }, ref) => {
+        return (
+            <MenuCont>
+                <input
+                    id="menu-checkbox2"
+                    name="menu-checkbox2"
+                    type="checkbox"
+                    ref={ref}
+                />
+                <label
+                    htmlFor="menu-checkbox2"
+                    className="menu__label"
+                    onClick={onClick}
+                >
+                    <div className="menu__hamburger"></div>
+                </label>
+            </MenuCont>
+        );
+    }
+);
 
 export default HamburgerMenu;

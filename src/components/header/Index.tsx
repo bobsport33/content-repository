@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import styled, { css } from "styled-components";
 import Link from "next/link";
 import { LinkStyles, P_LargeStyles } from "@/styles/type";
@@ -62,7 +62,7 @@ const HeaderContainer = styled.nav<HeaderContainerProps>`
                 top: 132px;
                 height: 0;
                 background-color: ${colors.neutral100};
-                z-index: 10;
+                z-index: 1000;
                 flex-direction: column;
                 gap: 0;
                 transition: height 0.5s ease-out;
@@ -92,8 +92,16 @@ const HeaderContainer = styled.nav<HeaderContainerProps>`
 
 const Header = () => {
     const [modalOpen, setModalOpen] = useState(false);
+    const menu = useRef<HTMLInputElement>(null);
     const openModalHandler = () => {
         setModalOpen((curr) => !curr);
+    };
+
+    const linkClickHandler = () => {
+        setModalOpen(false);
+        if (menu.current) {
+            menu.current.checked = false;
+        }
     };
 
     return (
@@ -105,20 +113,20 @@ const Header = () => {
                 </p>
             </Link>
             <button className="header__mobile-menu" onClick={openModalHandler}>
-                <HamburgerMenu onClick={openModalHandler} />
+                <HamburgerMenu ref={menu} onClick={openModalHandler} />
             </button>
             <div className="header__link-container">
                 <Link
                     className="header__link"
                     href={"/projects"}
-                    onClick={() => setModalOpen(false)}
+                    onClick={linkClickHandler}
                 >
                     Projects
                 </Link>
                 <Link
                     className="header__link"
                     href={"/about"}
-                    onClick={() => setModalOpen(false)}
+                    onClick={linkClickHandler}
                 >
                     About Us
                 </Link>

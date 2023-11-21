@@ -63,6 +63,7 @@ const FeaturedProjectCont = styled.div`
                 width: 100%;
                 max-width: unset;
                 margin-right: 0;
+                padding-top: 40px;
             }
 
             &::before {
@@ -74,6 +75,11 @@ const FeaturedProjectCont = styled.div`
                 top: 0;
                 left: 0;
                 z-index: -1;
+
+                @media ${media.tablet} {
+                    left: 0;
+                    top: 20px;
+                }
             }
 
             &::after {
@@ -85,6 +91,11 @@ const FeaturedProjectCont = styled.div`
                 top: -20px;
                 left: -20px;
                 z-index: -2;
+
+                @media ${media.tablet} {
+                    left: 0;
+                    top: 0;
+                }
             }
         }
 

@@ -41,7 +41,7 @@ const SecondaryHeroContainer = styled.section`
                 z-index: -2;
 
                 @media ${media.tablet} {
-                    top: 20px;
+                    top: 0;
                     left: 0;
                 }
             }
@@ -51,7 +51,7 @@ const SecondaryHeroContainer = styled.section`
                 height: 100%;
                 width: 100%;
                 position: absolute;
-                top: 0;
+                top: 20px;
                 left: 0;
                 background: ${colors.primary300};
                 z-index: -1;
