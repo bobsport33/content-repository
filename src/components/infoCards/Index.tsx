@@ -41,6 +41,7 @@ const InfoCardsCont = styled.section`
 
             @media ${media.tablet} {
                 flex-direction: column;
+                gap: 45px;
             }
         }
     }

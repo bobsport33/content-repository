@@ -28,3 +28,16 @@ export const ButtonStyles = css`
         background-color: ${colors.accent300};
     }
 `;
+
+export const DarkButtonStyles = css`
+    ${P_MediumStyles};
+    background-color: ${colors.primary300};
+    color: ${colors.neutral200};
+    padding: 15px;
+    transition: background-color 0.3s;
+
+    &:hover {
+        cursor: pointer;
+        background-color: ${colors.primary400};
+    }
+`;

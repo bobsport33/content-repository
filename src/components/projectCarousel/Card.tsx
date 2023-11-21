@@ -108,7 +108,14 @@ const Card = forwardRef<HTMLDivElement, Project>(
     ) => {
         const router = useRouter();
 
-        const cardClickHandler = () => {
+        const cardClickHandler = (e: React.MouseEvent<HTMLDivElement>) => {
+            // Check if the click originated from a Link element
+            if (e.target instanceof HTMLAnchorElement) {
+                // Click originated from a Link, don't perform router push
+                return;
+            }
+
+            // Perform router push only if the click did not originate from a Link
             router.push({
                 pathname: `/projects/${id}`,
             });

@@ -3,7 +3,10 @@
         "primaryHero": {
             "eyebrow": "Dui nunc mattis enim ut tellus",
             "heading": "Heading for the site",
-            "button": {}
+            "button": {
+                "text": "See Our Projects",
+                "href": "/projects"
+            }
         },
         "infoCards": {
             "heading": "Heading for Info Card Module",
@@ -11,7 +14,7 @@
             "cardInfo": [
                 {
                     "image": {
-                        "imageUrl": "https://picsum.photos/seed/picsum/370/245",
+                        "imageUrl": "/images/microscope.jpg",
                         "imageAlt": "alt text for the image"
                     },
                     "title": "This is a title",
@@ -19,7 +22,7 @@
                 },
                 {
                     "image": {
-                        "imageUrl": "https://picsum.photos/seed/piascsum/370/245",
+                        "imageUrl": "/images/test-tubes2.jpg",
                         "imageAlt": "alt text for the image"
                     },
                     "title": "This is a title",
@@ -27,7 +30,7 @@
                 },
                 {
                     "image": {
-                        "imageUrl": "https://picsum.photos/seed/ssdf/370/245",
+                        "imageUrl": "/images/petry-dish.jpg",
                         "imageAlt": "alt text for the image"
                     },
                     "title": "This is a title",
@@ -40,8 +43,8 @@
             "heading": "Heading for Content Module",
             "description": "amet commodo nulla facilisi nullam vehicula. Ultrices gravida dictum fusce ut. Ac turpis egestas sed tempus urna et pharetra pharetra. Faucibus a pellentesque sit",
             "image": {
-                "imageUrl": "https://picsum.photos/seed/ssdf/900/600",
-                "imageAlt": ""
+                "imageUrl": "/images/measuring-tubes.jpg",
+                "imageAlt": "alt text"
             }
         },
         "cta": {
@@ -57,7 +60,7 @@
         "secondaryHero": {
             "image": {
                 "imageUrl": "/images/molicules.jpg",
-                "imageAlt": ""
+                "imageAlt": "alt text"
             },
             "eyebrow": "Accumsan in nisl",
             "title": "This is a title",
@@ -66,7 +69,7 @@
         "sideBySideContent": {
             "image": {
                 "imageUrl": "",
-                "imageAlt": ""
+                "imageAlt": "alt text"
             },
             "title": "This is a title",
             "description": " Duis aute irure dolor in reprehenderit",
@@ -74,8 +77,8 @@
         },
         "sideBySideContent2": {
             "image": {
-                "imageUrl": "",
-                "imageAlt": ""
+                "imageUrl": "/images/test-tubes.jpg",
+                "imageAlt": "alt text"
             },
             "title": "This is a title",
             "description": " Duis aute irure dolor in reprehenderit",

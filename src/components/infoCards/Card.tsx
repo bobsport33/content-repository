@@ -50,7 +50,7 @@ const Card = ({ image, title, description, motionProps }: CardProps) => {
                 alt={image.imageAlt}
                 className="card__image"
                 width={370}
-                height={245}
+                height={400}
             />
             <h5 className="card__heading">{title}</h5>
             <p className="card__description">{description}</p>

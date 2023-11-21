@@ -4,13 +4,19 @@ import styled from "styled-components";
 import Link from "next/link";
 
 import { Project } from "@/types";
-import { colors } from "@/styles/variables";
+import { colors, media } from "@/styles/variables";
 import { ButtonStyles } from "@/styles/mixins";
 import { P_MediumStyles } from "@/styles/type";
 
 const FeaturedProjectCont = styled.div`
     position: relative;
     height: 600px;
+
+    @media ${media.tablet} {
+        display: flex;
+        flex-direction: column-reverse;
+        height: fit-content;
+    }
 
     .featured {
         &__background-image {
@@ -19,6 +25,12 @@ const FeaturedProjectCont = styled.div`
             left: 0;
             height: 100%;
             width: 100%;
+            object-fit: cover;
+
+            @media ${media.tablet} {
+                position: static;
+                max-height: 500px;
+            }
         }
 
         &__text-wrap {
@@ -26,6 +38,12 @@ const FeaturedProjectCont = styled.div`
             display: flex;
             align-items: center;
             justify-content: flex-end;
+
+            @media ${media.tablet} {
+                align-items: flex-start;
+                justify-content: center;
+                width: 100%;
+            }
         }
         &__text-container {
             margin-right: 100px;
@@ -40,6 +58,12 @@ const FeaturedProjectCont = styled.div`
             max-width: 40%;
             position: relative;
             z-index: 10;
+
+            @media ${media.tablet} {
+                width: 100%;
+                max-width: unset;
+                margin-right: 0;
+            }
 
             &::before {
                 content: "";

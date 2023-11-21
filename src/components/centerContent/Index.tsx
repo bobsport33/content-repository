@@ -1,16 +1,17 @@
 import React from "react";
 import styled from "styled-components";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 import { CenterContentProps } from "@/types";
-import { Container } from "@/styles/mixins";
 import { colors, media } from "@/styles/variables";
 import { EyebrowStyles, P_MediumStyles } from "@/styles/type";
 
-const CenterContentContainer = styled.section`
+const CenterContentContainer = styled(motion.section)`
     margin: 80px auto;
     padding: 40px;
-    width: 75%;
+    width: 70%;
+    max-width: 900px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -46,6 +47,9 @@ const CenterContentContainer = styled.section`
 
         &__image {
             object-fit: cover;
+            max-width: 800px;
+            height: auto;
+            aspect-ratio: 9 / 5;
 
             @media ${media.tablet} {
                 max-width: 90%;
@@ -60,8 +64,14 @@ const CenterContent = ({
     description,
     image,
 }: CenterContentProps) => {
+    const FadeUpMotionProps = {
+        initial: { y: 100, opacity: 0 },
+        whileInView: { y: 0, opacity: 1 },
+        viewport: { once: true, amount: 0.6 },
+        transition: { duration: 1 },
+    };
     return (
-        <CenterContentContainer>
+        <CenterContentContainer {...FadeUpMotionProps}>
             <div className="content__text-container">
                 <p className="content__eyebrow">{eyebrow}</p>
                 <h3 className="content__heading">{heading}</h3>

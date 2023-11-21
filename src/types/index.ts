@@ -1,7 +1,10 @@
 export interface HeroProps {
     eyebrow: string;
     heading: string;
-    button: {};
+    button: {
+        text: string;
+        href: string;
+    };
 }
 
 export interface InfoCardProps {

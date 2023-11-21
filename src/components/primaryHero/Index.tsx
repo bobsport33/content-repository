@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import Image from "next/image";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { color, motion, useScroll, useTransform } from "framer-motion";
+import Link from "next/link";
 
 import { HeroProps } from "@/types";
 import { colors, media } from "@/styles/variables";
-import { EyebrowStyles } from "@/styles/type";
+import { EyebrowStyles, P_SmallStyles } from "@/styles/type";
+import { DarkButtonStyles } from "@/styles/mixins";
 
 const PrimaryHeroContainer = styled.section`
     position: relative;
@@ -76,11 +78,14 @@ const PrimaryHeroContainer = styled.section`
         &__heading {
             text-align: center;
         }
+
+        &__btn {
+           ${DarkButtonStyles};
+        }
     }
 `;
 
-const PrimaryHero = (props: HeroProps) => {
-    const { eyebrow, heading, button } = props;
+const PrimaryHero = ({ eyebrow, heading, button }: HeroProps) => {
     const { scrollY } = useScroll();
 
     return (
@@ -109,7 +114,9 @@ const PrimaryHero = (props: HeroProps) => {
             <div className="hero__text-container">
                 <p className="hero__eyebrow">{eyebrow}</p>
                 <h1 className="hero__heading">{heading}</h1>
-                <button className="hero__btn"></button>
+                <Link href={button.href} className="hero__btn">
+                    {button.text}
+                </Link>
             </div>
         </PrimaryHeroContainer>
     );
