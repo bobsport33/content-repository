@@ -7,14 +7,25 @@ import Facebook from "@/styles/svg/facebook-icon.svg";
 import Instagram from "@/styles/svg/instagram-icon.svg";
 import LinkedIn from "@/styles/svg/linkedin-icon.svg";
 import { LinkStyles, P_MediumStyles } from "@/styles/type";
-import { colors } from "@/styles/variables";
+import { colors, media } from "@/styles/variables";
 
 const FooterContainer = styled.footer`
     background-color: ${colors.neutral1000};
     padding: 80px 60px 10px;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 500px 1fr;
     row-gap: 30px;
+
+    @media ${media.tablet} {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 60px 40px 10px;
+    }
+
+    @media ${media.mobile} {
+        display: flex;
+        flex-direction: column;
+        padding: 30px 30px 10px;
+    }
 
     .footer {
         &__logo {
