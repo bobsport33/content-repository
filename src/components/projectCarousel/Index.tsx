@@ -23,6 +23,7 @@ const Carousel = styled.section`
             scroll-behavior: smooth;
             scroll-snap-type: x mandatory;
             scrollbar-width: none;
+            height: fit-content;
 
             &::-webkit-scrollbar {
                 display: none;

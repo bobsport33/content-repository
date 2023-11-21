@@ -1,16 +1,15 @@
 import React, { useState, forwardRef } from "react";
 import styled from "styled-components";
-import Image from "next/image";
 import Link from "next/link";
-import { motion, AnimatePresence } from "framer-motion";
+import { useRouter } from "next/router";
 
 import { Project } from "@/types";
 import { colors, media } from "@/styles/variables";
 import { P_MediumStyles, P_SmallStyles } from "@/styles/type";
-import { useRouter } from "next/router";
 
 const CardCont = styled.div`
     scroll-snap-align: start;
+    flex-shrink: 0;
     width: 30vw;
     max-width: 500px;
     display: flex;
@@ -19,6 +18,7 @@ const CardCont = styled.div`
 
     @media ${media.tablet} {
         width: 40vw;
+        height: fit-content;
     }
 
     @media ${media.mobile} {
@@ -34,27 +34,22 @@ const CardCont = styled.div`
 
     .card {
         &__inner-container {
-            background-color: ${colors.neutral1000};
             position: relative;
             overflow: hidden;
             box-sizing: border-box;
             display: flex;
             flex-direction: column;
 
-            height: 300px;
+            /* height: 300px;
 
             @media ${media.tablet} {
-                height: 225px;
-            }
-
-            @media ${media.mobile} {
-                height: 175px;
-            }
+                height: fit-content;
+            } */
         }
 
         &__image {
             height: 100%;
-            width: 30vw;
+            width: 100%;
             max-width: 500px;
             object-fit: cover;
         }
@@ -75,17 +70,43 @@ const CardCont = styled.div`
             left: 0;
             transform: translateY(100%);
             transition: transform 0.5s ease-out;
+
+            @media ${media.tablet} {
+                position: static;
+                transform: translateY(0);
+                background-color: ${colors.accent100};
+                align-items: flex-start;
+                gap: 10px;
+            }
         }
 
         &__heading {
             padding: 15px 0;
             color: ${colors.neutral900};
+
+            @media ${media.tablet} {
+                display: none;
+            }
+        }
+
+        &__mobile-heading {
+            display: none;
+
+            @media ${media.tablet} {
+                display: block;
+                color: ${colors.neutral100};
+            }
         }
 
         &__description {
             color: ${colors.neutral100};
             ${P_MediumStyles};
             padding: 0 25px;
+
+            @media ${media.tablet} {
+                color: ${colors.neutral100};
+                padding: 0;
+            }
         }
 
         &__content-container {
@@ -94,10 +115,21 @@ const CardCont = styled.div`
             justify-content: space-evenly;
             gap: 20px;
             ${P_SmallStyles};
+
+            @media ${media.tablet} {
+                flex-direction: column;
+                gap: 15px;
+                align-items: flex-start;
+            }
         }
 
         &__spacer {
             color: ${colors.neutral100};
+
+            @media ${media.tablet} {
+                color: ${colors.neutral100};
+                display: none;
+            }
         }
 
         &__content {
@@ -105,6 +137,10 @@ const CardCont = styled.div`
             text-decoration: underline;
             color: ${colors.neutral100};
             transition: transform 0.3s;
+
+            @media ${media.tablet} {
+                color: ${colors.neutral100};
+            }
 
             &:hover {
                 transform: scale(1.05);
@@ -146,7 +182,7 @@ const Card = forwardRef<HTMLDivElement, Project>(
         return (
             <CardCont ref={ref} onClick={cardClickHandler}>
                 <div className="card__inner-container">
-                    <Image
+                    <img
                         className="card__image"
                         src={previewImage.imageUrl}
                         alt={previewImage.imageAlt}
@@ -155,6 +191,7 @@ const Card = forwardRef<HTMLDivElement, Project>(
                     />
 
                     <div className="card__dropdown">
+                        <h6 className="card__mobile-heading">{title}</h6>
                         <p className="card__description">{description}</p>
                         <div className="card__content-container">
                             <Link
