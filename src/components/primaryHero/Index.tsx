@@ -1,13 +1,21 @@
 import React, { useState, useEffect } from "react";
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import Image from "next/image";
-import { color, motion, useScroll, useTransform } from "framer-motion";
 import Link from "next/link";
 
 import { HeroProps } from "@/types";
 import { colors, media } from "@/styles/variables";
 import { EyebrowStyles, P_SmallStyles } from "@/styles/type";
 import { DarkButtonStyles } from "@/styles/mixins";
+
+const rotation = keyframes`
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+`;
 
 const PrimaryHeroContainer = styled.section`
     position: relative;
@@ -42,6 +50,7 @@ const PrimaryHeroContainer = styled.section`
             left: -25%;
             width: 150%;
             height: auto;
+            animation: ${rotation} linear infinite 60s;
 
             @media ${media.mobile} {
                 top: 200px;
@@ -80,14 +89,12 @@ const PrimaryHeroContainer = styled.section`
         }
 
         &__btn {
-           ${DarkButtonStyles};
+            ${DarkButtonStyles};
         }
     }
 `;
 
 const PrimaryHero = ({ eyebrow, heading, button }: HeroProps) => {
-    const { scrollY } = useScroll();
-
     return (
         <PrimaryHeroContainer>
             <div className="hero__background-image">
@@ -99,10 +106,7 @@ const PrimaryHero = ({ eyebrow, heading, button }: HeroProps) => {
                     width={1500}
                 />
             </div>
-            <motion.div
-                className="hero__earth-image"
-                style={{ rotate: useTransform(scrollY, [0, 15000], [0, 360]) }}
-            >
+            <div className="hero__earth-image">
                 <Image
                     className="hero__earth"
                     src="/images/earth.png"
@@ -110,7 +114,7 @@ const PrimaryHero = ({ eyebrow, heading, button }: HeroProps) => {
                     height={1500}
                     width={1500}
                 />
-            </motion.div>
+            </div>
             <div className="hero__text-container">
                 <p className="hero__eyebrow">{eyebrow}</p>
                 <h1 className="hero__heading">{heading}</h1>

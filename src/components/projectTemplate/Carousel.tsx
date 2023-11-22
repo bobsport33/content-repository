@@ -98,6 +98,10 @@ const CarouselCont = styled.div`
             border-radius: 8px;
             background-color: ${colors.primary400};
 
+            &:hover {
+                cursor: pointer;
+            }
+
             &--active {
                 background-color: ${colors.accent400};
             }
@@ -106,17 +110,36 @@ const CarouselCont = styled.div`
 `;
 
 const Carousel = ({ content }: CarouselProps) => {
-    const [featuredContent, setFeaturedContent] = useState(content[0]);
+    const [currentIndex, setCurrentIndex] = useState(0);
 
-    const updateCarouselHandler = (e: React.MouseEvent<HTMLButtonElement>) => {
-        const id = (e.target as HTMLButtonElement).id;
-
-        setFeaturedContent(content[+id]);
+    const updateCarouselHandler = (
+        e: React.MouseEvent<HTMLButtonElement> | number
+    ) => {
+        if (typeof e === "number") {
+            setCurrentIndex(e);
+        } else {
+            const id = (e.target as HTMLButtonElement).id;
+            setCurrentIndex(+id);
+        }
     };
 
     useEffect(() => {
-        setFeaturedContent(content[0]);
+        const interval = setInterval(() => {
+            const nextIndex = (currentIndex + 1) % content.length;
+            updateCarouselHandler(nextIndex);
+        }, 5000);
+
+        return () => {
+            clearInterval(interval);
+        };
+    }, [currentIndex, content]);
+
+    useEffect(() => {
+        // Reset to index 0 when content changes
+        updateCarouselHandler(0);
     }, [content]);
+
+    const featuredContent = content[currentIndex];
 
     return (
         <CarouselCont>
