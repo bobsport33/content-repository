@@ -107,7 +107,7 @@ const PrimaryHero = ({ eyebrow, heading, button }: HeroProps) => {
                 />
             </div>
             <div className="hero__earth-image">
-                <Image
+                <img
                     className="hero__earth"
                     src="/images/earth.png"
                     alt="earth"
