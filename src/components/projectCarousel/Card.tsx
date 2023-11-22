@@ -77,6 +77,7 @@ const CardCont = styled.div`
                 background-color: ${colors.accent100};
                 align-items: flex-start;
                 gap: 10px;
+                padding: 5px;
             }
         }
 
